@@ -1,0 +1,1197 @@
+---
+title: Getting Started
+emoji: 🚀
+order: 1
+description: Your first steps into AI marketing—understand the context, assess your maturity, and plan your journey
+---
+
+
+<div className="space-y-16">
+
+{/* Welcome */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">👋 Welcome</h2>
+  <div className="space-y-4">
+    <Toggle title="Why This Playbook Exists" level={2}>
+      <div className="bg-brevo-cream p-6 rounded-lg mb-4">
+        <p className="text-gray-700 mb-4">
+          <strong>Three years ago</strong>, a CMO at a mid-sized fashion retailer sent their content team to write 50 product descriptions for a new collection. <strong>Budget: $3,000. Timeline: 2 weeks.</strong> Result: Decent copy, delivered on time, but the team was exhausted.
+        </p>
+        <p className="text-gray-700 mb-4">
+          <strong>Last month</strong>, that same CMO generated 200 product descriptions in 90 minutes using AI. <strong>Cost: $47</strong> in tool subscriptions. <strong>Quality: Better than the originals.</strong> The team? They spent those 2 weeks designing a personalization strategy that increased conversion by 23%.
+        </p>
+        <p className="text-brevo-green font-semibold">
+          This isn't science fiction. This is Tuesday afternoon in 2025.
+        </p>
+      </div>
+      <p className="text-gray-600 mb-3">
+        But here's the thing: that CMO didn't wake up one day and magically know how to do this. They had questions. They made mistakes. They tested, failed, adjusted, and eventually built a system that works.
+      </p>
+      <p className="text-gray-800 font-semibold">
+        This playbook is everything they wish they'd had on day one.
+      </p>
+    </Toggle>
+
+    <Toggle title="Who This Is For" level={2}>
+      <div className="space-y-4">
+        <div className="bg-white border-l-4 border-brevo-green p-5 rounded">
+          <h5 className="font-semibold mb-2">💼 If you're a CMO or Marketing Leader:</h5>
+          <p className="text-gray-600 text-sm mb-3">
+            You're being asked to do more with less. Your board wants growth. Your CEO wants efficiency. Your team wants resources you don't have. AI isn't a nice-to-have anymore—it's the difference between hitting your targets and explaining why you didn't.
+          </p>
+          <p className="text-sm text-gray-800">
+            <strong>This playbook will help you</strong> build the business case, secure budget, organize your team, and demonstrate ROI in quarters, not years.
+          </p>
+        </div>
+
+        <div className="bg-white border-l-4 border-gray-400 p-5 rounded">
+          <h5 className="font-semibold mb-2">⚙️ If you're a Marketing Manager or Practitioner:</h5>
+          <p className="text-gray-600 text-sm mb-3">
+            You're drowning in tactical work. Every campaign needs more content, more variations, more personalization. You're spending 70% of your time on execution and 30% on strategy. You know there's a better way.
+          </p>
+          <p className="text-sm text-gray-800">
+            <strong>This playbook gives you</strong> the exact prompts, workflows, and tools to flip that ratio. Imagine spending 70% of your time thinking strategically and only 30% executing—because AI handles the heavy lifting.
+          </p>
+        </div>
+
+        <div className="bg-white border-l-4 border-gray-300 p-5 rounded">
+          <h5 className="font-semibold mb-2">🔍 If you're just curious:</h5>
+          <p className="text-gray-600 text-sm mb-3">
+            Welcome. You've heard the hype. You've seen the demos. You're wondering: "Is this real? Can I actually use this? Where do I even start?"
+          </p>
+          <p className="text-sm text-gray-800">
+            <strong>Start here.</strong> We'll take you from zero to functional in days, not months.
+          </p>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="How to Navigate" level={2}>
+      <p className="text-gray-600 mb-4">
+        This isn't a book you read cover-to-cover (though you could). It's a <strong>choose-your-own-adventure playbook</strong>.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <Card title="Need strategic ammunition?" variant="default">
+          <p className="text-sm text-gray-600">
+            → Jump to <strong>Section 2: Strategic Foundations</strong><br/>
+            Get ROI models, stakeholder pitch decks, and organizational blueprints.
+          </p>
+        </Card>
+
+        <Card title="Need results by Friday?" variant="success">
+          <p className="text-sm text-gray-600">
+            → Go straight to the <strong>Quick Wins</strong> in Sections 3-8<br/>
+            Copy-paste prompts and workflows that deliver immediate value.
+          </p>
+        </Card>
+
+        <Card title="Ready to transform operations?" variant="default">
+          <p className="text-sm text-gray-600">
+            → Dive into the <strong>Operational Playbooks</strong><br/>
+            60+ detailed workflows with step-by-step instructions.
+          </p>
+        </Card>
+
+        <Card title="Building long-term capability?" variant="highlight">
+          <p className="text-sm text-gray-600">
+            → Explore <strong>Section 9: Skills & Mastery</strong><br/>
+            Prompt engineering, workflow design, and team development.
+          </p>
+        </Card>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4">
+        <p className="text-sm text-gray-dark">
+          <strong>Pro tip:</strong> Do the maturity assessment below. It'll tell you exactly where to start based on where you are today.
+        </p>
+      </div>
+    </Toggle>
+
+  </div>
+</div>
+
+{/* AI Marketing in 2025 */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">🚀 AI Marketing in 2025: The Context</h2>
+  <div className="space-y-4">
+    <Toggle title="What Is AI Marketing? (And Why Definitions Matter)" level={2}>
+      <p className="text-gray-600 mb-4">
+        Let's clear up some confusion because your CEO, your CTO, and your newest intern probably all mean different things when they say "AI."
+      </p>
+      <p className="text-gray-700 mb-4">
+        <strong>Artificial Intelligence (AI)</strong> is the umbrella term for machines performing tasks that typically require human intelligence—learning, problem-solving, pattern recognition, decision-making.
+      </p>
+      <p className="text-gray-600 mb-4">
+        But in marketing, we're really talking about <strong>three specific types</strong>:
+      </p>
+
+      <div className="space-y-4">
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h5 className="font-semibold text-brevo-green mb-2">1. Machine Learning (ML) — The Pattern Finder</h5>
+          <p className="text-sm text-gray-600 mb-3">
+            This is the technology that's been around for a decade. It analyzes historical data to predict future outcomes.
+          </p>
+          <p className="text-sm font-semibold mb-2">Examples in marketing:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• "Customers who bought this also bought..." (Amazon)</li>
+            <li>• Predictive lead scoring (Salesforce)</li>
+            <li>• Email send-time optimization (Mailchimp)</li>
+            <li>• Programmatic ad bidding</li>
+            <li>• Churn prediction models</li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-3">
+            <strong>What it does:</strong> ML looks at thousands of past examples and says, "Based on pattern X, outcome Y is likely." It's excellent at optimization and prediction but doesn't create anything new.
+          </p>
+          <p className="text-sm text-gray-600 mt-2">
+            Your team probably uses ML already without realizing it—it's baked into most marketing platforms.
+          </p>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green rounded-lg p-5">
+          <h5 className="font-semibold text-brevo-green mb-2">2. Generative AI (GenAI) — The Creator ⭐</h5>
+          <p className="text-sm text-gray-dark font-semibold mb-2">This is the revolution.</p>
+          <p className="text-sm text-gray-700 mb-3">
+            GenAI doesn't just predict; it creates new content from scratch—text, images, video, code, music.
+          </p>
+          <p className="text-sm font-semibold mb-2">Examples in marketing:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• ChatGPT writing blog posts, ad copy, email sequences</li>
+            <li>• Midjourney/DALL-E generating product images, ad creatives</li>
+            <li>• Runway creating video ads from text prompts</li>
+            <li>• ElevenLabs cloning voices for personalized audio ads</li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-3">
+            <strong>What it does:</strong> GenAI learns from billions of examples and generates original content that follows patterns but is unique. It's like having a creative team member who never sleeps, never has writer's block, and can work in 50 languages simultaneously.
+          </p>
+          <p className="text-sm font-bold text-brevo-green mt-2">
+            This is what changed everything in 2023-2024 and why your boss suddenly cares about AI.
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h5 className="font-semibold text-brevo-green mb-2">3. Predictive AI — The Fortune Teller</h5>
+          <p className="text-sm text-gray-600 mb-3">
+            This uses ML to forecast specific marketing outcomes with increasing accuracy.
+          </p>
+          <p className="text-sm font-semibold mb-2">Examples in marketing:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Customer lifetime value prediction</li>
+            <li>• Campaign performance forecasting</li>
+            <li>• Budget allocation optimization</li>
+            <li>• Inventory planning based on demand signals</li>
+            <li>• Next-best-action recommendations</li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-3">
+            <strong>What it does:</strong> It helps you make smarter decisions by showing you probable futures based on current data.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 mt-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Why This Matters to You:</p>
+        <p className="text-sm text-gray-700 mb-2">
+          When you're evaluating tools or planning initiatives, knowing which type of AI you're using changes everything:
+        </p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4">
+          <li>• <strong>ML-based tools</strong> → Great for optimization, require clean historical data, get better over time</li>
+          <li>• <strong>GenAI tools</strong> → Great for creation, require good prompting, deliver immediate value</li>
+          <li>• <strong>Predictive AI</strong> → Great for strategy, require data integration, drive high-level decisions</li>
+        </ul>
+        <p className="text-sm text-gray-700 mt-2">
+          Most modern marketing AI stacks use all three in combination. Google Ads uses ML for bidding, GenAI for creative suggestions, and predictive AI for budget recommendations—all in one platform.
+        </p>
+      </div>
+    </Toggle>
+
+    <Toggle title="The Current Landscape & Adoption" level={2}>
+      <p className="text-gray-600 mb-4">The numbers tell a clear story:</p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <Card title="73%" description="of marketing leaders say AI is a top-3 priority for 2025 (Gartner)" variant="success" />
+        <Card title="$107B" description="global marketing AI spend projected for 2025 (IDC)" variant="success" />
+        <Card title="5.5x ROI" description="average return on AI marketing investments (Forrester)" variant="success" />
+        <Card title="62%" description="of B2C brands now use GenAI for content creation" variant="success" />
+      </div>
+
+      <div className="bg-gray-100 border-l-4 border-gray-dark p-5 mt-6">
+        <h5 className="font-semibold text-gray-dark mb-3">But here's what's more interesting: the gap is widening.</h5>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p className="text-sm font-semibold text-gray-dark mb-2">Early adopters (15-20% of brands) are seeing:</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• 40-60% reduction in content production costs</li>
+              <li>• 3-5x increase in content output</li>
+              <li>• 15-25% improvement in campaign performance</li>
+              <li>• 30-50% time saved on repetitive tasks</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold text-gray-dark mb-2">Late adopters (the remaining 80%) are:</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• Watching competitors move faster</li>
+              <li>• Struggling to hire (top talent wants modern tools)</li>
+              <li>• Losing market share in SEO</li>
+              <li>• Burning budgets on tactics AI could do for 10% of the cost</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-sm font-bold text-gray-dark mt-4">
+          The gap between these groups grows every quarter.
+        </p>
+      </div>
+    </Toggle>
+
+    <Toggle title="Why Now: The Urgency" level={2}>
+      <p className="text-gray-600 mb-4 italic">
+        "But we're doing fine without AI. Why rush?"
+      </p>
+      <p className="text-gray-700 mb-4">Fair question. Here are five reasons why waiting is more expensive than acting:</p>
+
+      <div className="space-y-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-brevo-green mb-2">1. The Competitive Moat Is Being Built Right Now</h5>
+          <p className="text-sm text-gray-600 mb-3">
+            Your competitors aren't just using AI for efficiency—they're using it to create advantages you can't replicate later.
+          </p>
+          <div className="bg-gray-50 p-4 rounded">
+            <p className="text-sm text-gray-700 mb-2"><strong>Example:</strong></p>
+            <p className="text-sm text-gray-600">
+              A beauty brand uses AI to generate 1,000 variations of product descriptions, each optimized for different customer segments. They run A/B tests at a scale you can't match manually. They learn faster. They convert better. By the time you start, they're 18 months ahead in optimization data.
+            </p>
+          </div>
+          <p className="text-sm font-semibold text-brevo-green mt-3">
+            The advantage compounds. First movers are learning 10x faster than manual teams.
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-brevo-green mb-2">2. Talent Expects It</h5>
+          <p className="text-sm text-gray-600">
+            Top marketers in 2025 won't join teams that don't use AI. It's like asking a designer to join a company that still uses MS Paint.
+          </p>
+          <p className="text-sm text-gray-700 mt-2">
+            If you want to attract and retain A-players, you need modern tools. Otherwise, you're fishing in a shrinking talent pool of people who haven't upskilled.
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-brevo-green mb-2">3. Cost Structures Are Shifting</h5>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-3">
+            <div className="bg-gray-100 p-4 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Traditional agency costs:</p>
+              <p className="text-2xl font-bold text-gray-dark">$5,000</p>
+              <p className="text-xs text-gray-600">for a campaign creative suite (10 variations)</p>
+            </div>
+            <div className="bg-brevo-cream p-4 rounded">
+              <p className="text-sm font-semibold text-brevo-green mb-1">AI-powered in-house:</p>
+              <p className="text-2xl font-bold text-brevo-green">$200</p>
+              <p className="text-xs text-gray-700">and 2 hours for 100 variations</p>
+            </div>
+          </div>
+          <p className="text-sm text-gray-700 mt-3">
+            The brands that figure this out first can reallocate those savings to media spend, testing, or innovation. The brands that don't are spending <strong>25x more for worse results</strong>.
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-brevo-green mb-2">4. Customer Expectations Are Rising</h5>
+          <p className="text-sm text-gray-600 mb-3">Consumers now expect:</p>
+          <ul className="text-sm space-y-2 text-gray-700 ml-4">
+            <li>• <strong>Personalization</strong> (70% abandon brands that don't personalize—McKinsey)</li>
+            <li>• <strong>Instant responses</strong> (82% expect immediate answers—Salesforce)</li>
+            <li>• <strong>Relevant content</strong> (58% unsubscribe from irrelevant emails—HubSpot)</li>
+          </ul>
+          <p className="text-sm font-semibold text-gray-800 mt-3">
+            You can't deliver on these expectations manually. Your customers don't care that you're not using AI. They just know your competitor's experience is better.
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-brevo-green mb-2">5. The Regulatory Window Is Open</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            Right now, AI tools are relatively unregulated. You can experiment, test, learn, and build capabilities without significant legal overhead.
+          </p>
+          <p className="text-sm text-gray-700 mb-2">
+            <strong>That window is closing.</strong> EU AI Act, California's AI regulations, industry-specific rules—they're all coming.
+          </p>
+          <p className="text-sm font-semibold text-brevo-green">
+            Brands that build expertise now will navigate regulations easily. Brands that wait will face compliance costs plus a learning curve.
+          </p>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Opportunities for B2C Brands" level={2}>
+      <p className="text-gray-600 mb-4">
+        B2C brands have a unique advantage in AI adoption. Unlike B2B (long sales cycles, complex buying committees), B2C moves fast, tests quickly, and sees results in days, not quarters.
+      </p>
+      <p className="text-gray-700 font-semibold mb-4">Here's where B2C brands are winning with AI:</p>
+
+      <div className="space-y-3">
+        <div className="bg-brevo-cream p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">1. Hyper-Personalization at Scale</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            <strong>Old way:</strong> 3-5 customer segments, manual personalization<br/>
+            <strong>AI way:</strong> Segments of one, automated personalization
+          </p>
+          <div className="bg-white p-3 rounded mt-2">
+            <p className="text-sm text-gray-700">
+              <strong>Example:</strong> A fashion retailer uses AI to generate personalized email subject lines, body copy, product recommendations, and send times for 500,000 subscribers. Each email is unique. Open rates: +35%. Conversion: +22%.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">2. Content Volume Without Compromise</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            <strong>Old way:</strong> 50 SKUs = 50 descriptions = 20 hours of writing<br/>
+            <strong>AI way:</strong> 5,000 SKUs = 5,000 unique descriptions = 3 hours
+          </p>
+          <div className="bg-white p-3 rounded mt-2">
+            <p className="text-sm text-gray-700">
+              <strong>Example:</strong> An electronics brand launches 200 products monthly. AI writes base descriptions in 30 minutes. Humans spend 2 hours editing and optimizing. Result: 90% time savings, better SEO performance.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">3. Creative Testing at Netflix Scale</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            <strong>Old way:</strong> Test 3 ad creatives, pick the winner<br/>
+            <strong>AI way:</strong> Generate 50 variations, test systematically, compound learnings
+          </p>
+          <div className="bg-white p-3 rounded mt-2">
+            <p className="text-sm text-gray-700">
+              <strong>Example:</strong> A DTC snack brand uses AI to create 30 different ad angles from one product shoot. They test all 30 with $50 budgets. The winner outperforms their usual creative by 3.2x ROAS. Total cost: $1,500. Previous agency fee for 3 creatives: $8,000.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">4. Real-Time Campaign Optimization</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            <strong>Old way:</strong> Weekly performance reviews, manual adjustments<br/>
+            <strong>AI way:</strong> Hourly optimization, automated reallocation
+          </p>
+          <div className="bg-white p-3 rounded mt-2">
+            <p className="text-sm text-gray-700">
+              <strong>Example:</strong> A travel brand uses AI to monitor campaign performance and automatically shift budget from underperforming channels to winners. Result: 18% improvement in blended CAC with same total spend.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">5. Customer Service That Scales</h5>
+          <p className="text-sm text-gray-600 mb-2">
+            <strong>Old way:</strong> Hire more agents as volume grows<br/>
+            <strong>AI way:</strong> AI handles 70-80% of queries, agents handle complex cases
+          </p>
+          <div className="bg-white p-3 rounded mt-2">
+            <p className="text-sm text-gray-700">
+              <strong>Example:</strong> A pet supplies brand deploys an AI chatbot handling returns, tracking, recommendations. Resolution rate: 76%. Customer satisfaction: 4.6/5. Cost savings: $240K annually vs. hiring 4 additional agents.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg mt-6">
+        <h5 className="font-semibold text-brevo-green mb-3">The Bottom Line:</h5>
+        <p className="text-sm text-gray-dark mb-2">B2C brands that master AI marketing will:</p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4">
+          <li>• Produce 5-10x more content</li>
+          <li>• Personalize at true 1:1 scale</li>
+          <li>• Test and learn 50x faster</li>
+          <li>• Reduce costs by 40-60%</li>
+          <li>• Reallocate savings to growth initiatives</li>
+        </ul>
+        <p className="text-sm font-bold text-gray-dark mt-3">
+          B2C brands that don't will wonder why their competitors are everywhere while they're struggling to keep up.
+        </p>
+      </div>
+    </Toggle>
+
+  </div>
+</div>
+
+{/* Where You Stand - Maturity Assessment */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">📊 Where You Stand</h2>
+  <div className="space-y-4">
+    <Toggle title="Quick Maturity Assessment (10 Questions)" level={2}>
+      <div className="bg-brevo-cream p-5 rounded-lg mb-4">
+        <p className="text-sm text-gray-700 mb-2">
+          Before you dive into tactics, let's figure out where you are today. This 10-question assessment evaluates your team's AI readiness across skills and culture.
+        </p>
+        <p className="text-sm font-semibold text-gray-dark">How it works:</p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4 mt-2">
+          <li>• Answer honestly (no one's watching)</li>
+          <li>• Score each question 0-3</li>
+          <li>• Total your score</li>
+          <li>• See your recommendation below</li>
+        </ul>
+      </div>
+
+      {/* Questions 1-10 - Compact format */}
+      <div className="space-y-3">
+        {[
+          {
+            q: "QUESTION 1: AI Awareness & Education",
+            title: "How would you describe your team's understanding of AI marketing capabilities?",
+            options: [
+              '0 points: "AI? Like robots? We don\'t really know what it can do for marketing."',
+              '1 point: "We\'ve heard about ChatGPT and seen some demos, but haven\'t used it seriously."',
+              '2 points: "Several team members experiment with AI tools, but it\'s not systematic."',
+              '3 points: "The team regularly uses AI tools and understands different applications."'
+            ]
+          },
+          {
+            q: "QUESTION 2: Current Tool Usage",
+            title: "Which statement best describes your team's AI tool adoption?",
+            options: [
+              '0 points: "We don\'t currently use any AI-powered marketing tools."',
+              '1 point: "We use platforms with AI features (like Meta Ads), but don\'t use standalone AI tools."',
+              '2 points: "A few team members use ChatGPT or similar tools occasionally (1-2x/week)."',
+              '3 points: "Multiple AI tools are part of daily workflows across the team."'
+            ]
+          },
+          {
+            q: "QUESTION 3: Prompt Engineering Skills",
+            title: "How skilled is your team at writing effective prompts?",
+            options: [
+              '0 points: "We haven\'t written prompts. We don\'t know what makes a good prompt."',
+              '1 point: "We\'ve tried basic prompts like \'write a blog post about X\' with mixed results."',
+              '2 points: "Some team members write detailed prompts with context, tone, format instructions."',
+              '3 points: "We have prompt templates, iterate systematically, and achieve consistent quality."'
+            ]
+          },
+          {
+            q: "QUESTION 4: Process Integration",
+            title: "How integrated is AI into your marketing workflows?",
+            options: [
+              '0 points: "We don\'t have any AI-specific workflows or processes."',
+              '1 point: "A few people use AI ad-hoc, but it\'s not part of official processes."',
+              '2 points: "We have a few documented AI workflows for specific tasks."',
+              '3 points: "AI is integrated into multiple workflows with clear handoffs and SOPs."'
+            ]
+          },
+          {
+            q: "QUESTION 5: Quality Control",
+            title: "How do you ensure quality when using AI-generated content?",
+            options: [
+              '0 points: "We don\'t use AI content yet, so no quality process exists."',
+              '1 point: "Quality control is inconsistent—depends on who\'s using AI."',
+              '2 points: "We have a basic review process: human checks all AI outputs before publishing."',
+              '3 points: "We have detailed quality checklists, brand voice guidelines, and systematic testing."'
+            ]
+          },
+          {
+            q: "QUESTION 6: Leadership Support",
+            title: "What's leadership's stance on AI marketing?",
+            options: [
+              '0 points: "Leadership hasn\'t discussed AI marketing or sees it as hype/risky."',
+              '1 point: "Leadership is curious but hasn\'t allocated budget or made it a priority."',
+              '2 points: "Leadership supports AI exploration; we have a small budget for tools/learning."',
+              '3 points: "Leadership champions AI; it\'s a strategic priority with dedicated budget."'
+            ]
+          },
+          {
+            q: "QUESTION 7: Experimentation Culture",
+            title: "How does your team approach trying new AI capabilities?",
+            options: [
+              '0 points: "We avoid experimentation—too risky, might fail, no time for testing."',
+              '1 point: "We\'re interested but cautious; need approval for any new tools."',
+              '2 points: "We run occasional pilots; team members can test tools if they\'re free/cheap."',
+              '3 points: "We actively experiment; failure is expected; we document learnings and iterate."'
+            ]
+          },
+          {
+            q: "QUESTION 8: Data & Measurement",
+            title: "How do you track AI's impact on your marketing?",
+            options: [
+              '0 points: "We don\'t track AI separately—no specific metrics or benchmarks."',
+              '1 point: "We track time saved anecdotally (\'this took 2 hours instead of 8\')."',
+              '2 points: "We track basic metrics: content output, time saved, cost per piece."',
+              '3 points: "We have comprehensive KPIs: efficiency, quality, performance, ROI with baselines."'
+            ]
+          },
+          {
+            q: "QUESTION 9: Skills Development",
+            title: "What's your approach to building AI marketing skills?",
+            options: [
+              '0 points: "No training plan; people figure it out on their own if interested."',
+              '1 point: "We\'ve shared a few articles or videos, but no formal training."',
+              '2 points: "We\'ve done 1-2 training sessions; team members take external courses occasionally."',
+              '3 points: "We have structured learning paths, regular training, internal champions."'
+            ]
+          },
+          {
+            q: "QUESTION 10: Cross-Functional Collaboration",
+            title: "How does AI marketing work with other teams (IT, Legal, Finance)?",
+            options: [
+              '0 points: "We haven\'t involved other teams—AI is just a marketing thing."',
+              '1 point: "We\'ve had a few conversations but no formal collaboration."',
+              '2 points: "Legal/IT/Finance are aware; we consult them on specific tools."',
+              '3 points: "We have cross-functional governance: clear roles, approval processes, shared standards."'
+            ]
+          }
+        ].map((item, idx) => (
+          <div key={idx} className="bg-white border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-sm text-brevo-green mb-2">{item.q}</h5>
+            <p className="text-sm text-gray-700 mb-2">{item.title}</p>
+            <ul className="text-xs space-y-1 text-gray-600 ml-2">
+              {item.options.map((opt, i) => (
+                <li key={i}>• {opt}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </Toggle>
+
+    <Toggle title="Your Score & Recommendation" level={2}>
+      <p className="text-sm text-gray-600 mb-4">Add up your points (0-30 total):</p>
+
+      <div className="space-y-4">
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-5">
+          <h5 className="font-bold text-gray-dark mb-2">0-8 POINTS: EXPLORER STAGE 🔍</h5>
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>Where you are:</strong> You're at the beginning of the AI journey. Your team has awareness but limited hands-on experience.
+          </p>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Your priority: Build foundational skills and run small pilots.</p>
+          <p className="text-sm text-gray-600 mb-2">Start here:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• This week: Create free ChatGPT accounts, complete 3 basic prompts</li>
+            <li>• Month 1: Pick ONE use case (blog content or social captions)</li>
+            <li>• Month 2: Document wins, measure savings, present to leadership</li>
+            <li>• Month 3: Expand to second use case</li>
+          </ul>
+          <div className="mt-3 p-3 bg-white rounded">
+            <p className="text-xs text-gray-600">
+              <strong>Expected timeline:</strong> 3-6 months to reach Practitioner stage<br/>
+              <strong>Investment needed:</strong> $50-200/month in tools, 10 hours/month in learning
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5">
+          <h5 className="font-bold text-brevo-green mb-2">9-17 POINTS: PRACTITIONER STAGE ⚙️</h5>
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>Where you are:</strong> You're actively using AI tools. Some team members have developed skills. Usage is inconsistent.
+          </p>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Your priority: Standardize workflows and build team capability.</p>
+          <p className="text-sm text-gray-600 mb-2">Start here:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• This week: Audit current AI usage—who's using what?</li>
+            <li>• Month 1: Document 3-5 most effective workflows with SOPs</li>
+            <li>• Month 2: Train entire team, establish quality standards</li>
+            <li>• Month 3: Expand to 3 new use cases</li>
+          </ul>
+          <div className="mt-3 p-3 bg-white rounded">
+            <p className="text-xs text-gray-600">
+              <strong>Expected timeline:</strong> 4-8 months to reach Advanced stage<br/>
+              <strong>Investment needed:</strong> $500-2K/month in tools, 20 hours/month in optimization
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5">
+          <h5 className="font-bold text-brevo-green mb-2">18-24 POINTS: ADVANCED STAGE 🚀</h5>
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>Where you are:</strong> AI is integrated into daily operations. You're seeing measurable ROI. Strong team skills.
+          </p>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Your priority: Drive strategic differentiation and organizational transformation.</p>
+          <p className="text-sm text-gray-600 mb-2">Start here:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• This month: Map every marketing workflow; identify bottlenecks</li>
+            <li>• Quarter 1: Build Center of Excellence; train champions</li>
+            <li>• Quarter 2: Launch 5 advanced use cases</li>
+            <li>• Quarter 3: Quantify impact; present to board; secure expanded budget</li>
+          </ul>
+          <div className="mt-3 p-3 bg-white rounded">
+            <p className="text-xs text-gray-600">
+              <strong>Expected timeline:</strong> 6-12 months to reach Expert stage<br/>
+              <strong>Investment needed:</strong> $2K-10K/month, strategic consulting, continuous innovation
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-white border-2 border-brevo-green p-5">
+          <h5 className="font-bold text-brevo-green mb-2">25-30 POINTS: EXPERT STAGE 🏆</h5>
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>Where you are:</strong> You're a leader in AI marketing adoption. Systematic processes, strong governance, measurable ROI.
+          </p>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Your priority: Push boundaries, share learnings, shape the industry.</p>
+          <p className="text-sm text-gray-600 mb-2">Start here:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Package learnings into case studies</li>
+            <li>• Speak at events; publish thought leadership</li>
+            <li>• Explore bleeding-edge capabilities (custom models, API integrations)</li>
+            <li>• Mentor other teams; contribute to this playbook community</li>
+          </ul>
+          <p className="text-sm font-semibold text-brevo-green mt-3">
+            You don't need a roadmap—you're writing it.
+          </p>
+        </div>
+      </div>
+    </Toggle>
+
+  </div>
+</div>
+
+{/* Your First Steps - Detailed 4-phase plan */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">🎯 Your First Steps</h2>
+  <div className="space-y-4">
+    <Toggle title="PHASE 1: FOUNDATION (Days 1-30)" level={2}>
+      <p className="text-sm font-semibold text-brevo-green mb-3">Goal: Build basic competency and see quick wins</p>
+
+      <div className="space-y-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">1. Set Up Your Core Tools (Day 1)</h5>
+          <p className="text-sm text-gray-600 mb-2">Create accounts:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• ChatGPT Plus ($20/month) or Claude Pro ($20/month)</li>
+            <li>• Canva Pro ($13/month) — has AI design features</li>
+            <li>• Grammarly ($12/month) — AI writing assistant</li>
+          </ul>
+          <p className="text-xs text-gray-600 mt-2">
+            <strong>Total investment:</strong> ~$50/month | <strong>Time:</strong> 30 minutes
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">2. Learn Prompt Basics (Days 2-7)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Complete Foundation Level in Section 9 (2 hours)</li>
+            <li>• Practice with 10 starter prompts</li>
+            <li>• Focus on: clear instructions, context, format specifications</li>
+            <li>• <strong>Goal:</strong> Write 3 effective prompts on your own</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">3. Choose Your First Use Case (Week 2)</h5>
+          <p className="text-sm text-gray-600 mb-2">Pick ONE workflow from Quick Wins sections. Recommended starters:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Blog post generation (Content & SEO)</li>
+            <li>• Social media caption creation (Social Media)</li>
+            <li>• Email subject line testing (Email Marketing)</li>
+          </ul>
+          <p className="text-xs text-gray-600 mt-2"><strong>Why these?</strong> Fast results, low risk, easy to measure</p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">4. Create Your First Workflow (Weeks 3-4)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Document step-by-step (even if just 3 steps)</li>
+            <li>• Include: trigger, prompt, review process, publish</li>
+            <li>• Test with 5-10 pieces of content</li>
+            <li>• Measure: time saved, quality (1-10), satisfaction</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">5. Share Your First Win (End of Month 1)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Present to your team (informal, 10 minutes)</li>
+            <li>• Show: what you tried, results, what you learned</li>
+            <li>• Invite 2-3 teammates to try it next month</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mt-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Success criteria:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>✅ Working tools setup</li>
+          <li>✅ 1 documented workflow</li>
+          <li>✅ 5+ pieces of AI-assisted content published</li>
+          <li>✅ Measurable time or cost savings</li>
+          <li>✅ Team knows you're experimenting</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="PHASE 2: EXPANSION (Months 2-3)" level={2}>
+      <p className="text-sm font-semibold text-brevo-green mb-3">Goal: Scale what works, add capabilities, build team skills</p>
+
+      <div className="space-y-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">1. Standardize Your Winner (Month 2, Week 1)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Turn your Phase 1 workflow into an SOP</li>
+            <li>• Add quality checklist</li>
+            <li>• Create prompt templates</li>
+            <li>• Train 2-3 teammates</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">2. Add 2 New Use Cases (Month 2, Weeks 2-4)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Choose from same functional area OR branch out</li>
+            <li>• Use Operational Playbooks in Sections 3-8</li>
+            <li>• Run each workflow 10+ times to refine</li>
+            <li>• Document what works, what doesn't</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">3. Establish Quality Standards (Month 3, Week 1)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Create brand voice guidelines for AI</li>
+            <li>• Build review checklist (10-15 items)</li>
+            <li>• Define "publish-ready" criteria</li>
+            <li>• Train team on quality gates</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">4. Measure Impact (Month 3, Weeks 2-3)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Track: time saved, cost reduction, output increase</li>
+            <li>• Calculate ROI (even rough estimates)</li>
+            <li>• Identify bottlenecks or quality issues</li>
+            <li>• Document lessons learned</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">5. Present to Leadership (Month 3, Week 4)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Show results (metrics + examples)</li>
+            <li>• Request modest budget increase ($200-500/month)</li>
+            <li>• Outline next phase opportunities</li>
+            <li>• Address concerns proactively</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mt-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Success criteria:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>✅ 3 functioning workflows</li>
+          <li>✅ 50+ pieces of AI-assisted content</li>
+          <li>✅ Documented ROI (time, cost, or both)</li>
+          <li>✅ 3-5 trained team members</li>
+          <li>✅ Leadership buy-in for next phase</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="PHASE 3: SYSTEMATIZATION (Months 4-6)" level={2}>
+      <p className="text-sm font-semibold text-brevo-green mb-3">Goal: Make AI a default part of operations, not an experiment</p>
+
+      <div className="space-y-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">1. Workflow Integration (Month 4)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Map all marketing workflows</li>
+            <li>• Identify where AI can help in each</li>
+            <li>• Update SOPs to include AI steps</li>
+            <li>• Train entire team on new processes</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">2. Tool Stack Optimization (Month 5, Weeks 1-2)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Evaluate what you're using vs. what you need</li>
+            <li>• Cut underutilized tools</li>
+            <li>• Add specialized tools for top use cases</li>
+            <li>• Budget: $500-2K/month depending on team size</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">3. Quality & Governance (Month 5, Weeks 3-4)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Implement formal review processes</li>
+            <li>• Create escalation paths for quality issues</li>
+            <li>• Establish approval workflows</li>
+            <li>• Document legal/ethical guidelines (Section 10)</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">4. Skills Development Program (Month 6)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Create tiered learning paths</li>
+            <li>• Schedule monthly training sessions</li>
+            <li>• Identify power users / champions</li>
+            <li>• Build internal knowledge base</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">5. Advanced Use Cases (Month 6)</h5>
+          <p className="text-sm text-gray-600 mb-2">Launch 3 more sophisticated workflows:</p>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Personalization at scale</li>
+            <li>• Multi-channel campaign creation</li>
+            <li>• Performance analysis & optimization</li>
+          </ul>
+          <p className="text-xs text-gray-600 mt-2">These require integration of multiple tools/processes</p>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mt-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Success criteria:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>✅ AI integrated into 10+ workflows</li>
+          <li>✅ 80%+ of team using AI weekly</li>
+          <li>✅ Formal governance in place</li>
+          <li>✅ Measurable impact on team capacity</li>
+          <li>✅ Requests for more AI projects (not pushback)</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="PHASE 4: TRANSFORMATION (Months 7-12)" level={2}>
+      <p className="text-sm font-semibold text-brevo-green mb-3">Goal: Achieve organizational advantage, not just tactical efficiency</p>
+
+      <div className="space-y-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">1. Organizational Redesign (Months 7-8)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Revisit team structure (Section 2)</li>
+            <li>• Shift roles from execution to strategy</li>
+            <li>• Create Center of Excellence or champion network</li>
+            <li>• Hire for AI-forward roles if needed</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">2. Competitive Differentiation (Months 9-10)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Identify unique advantages AI enables for YOU</li>
+            <li>• Examples: Personalization depth, content volume, testing velocity</li>
+            <li>• Build moats, not just features</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">3. Comprehensive Measurement (Month 11)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Implement full KPI framework (Section 10)</li>
+            <li>• Track efficiency, quality, performance, innovation</li>
+            <li>• Create executive dashboards</li>
+            <li>• Establish quarterly business reviews</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h5 className="font-semibold text-sm mb-2">4. Continuous Innovation (Month 12 and beyond)</h5>
+          <ul className="text-sm space-y-1 text-gray-600 ml-4">
+            <li>• Dedicate 20% of capacity to experimentation</li>
+            <li>• Test emerging capabilities</li>
+            <li>• Share learnings internally and externally</li>
+            <li>• Refresh playbooks quarterly</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mt-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Success criteria:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>✅ AI is "how we work," not "a project"</li>
+          <li>✅ Clear competitive advantages</li>
+          <li>✅ Quantified ROI across multiple dimensions</li>
+          <li>✅ Team skilled and confident</li>
+          <li>✅ Recognition as an AI-forward organization</li>
+        </ul>
+      </div>
+    </Toggle>
+
+  </div>
+</div>
+
+{/* 10 Essential Prompts */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">✨ 10 Essential Prompts to Start Today</h2>
+  <p className="text-gray-600 mb-4">
+    No matter where you are, these 10 prompts will give you immediate value. Copy, customize, use.
+  </p>
+
+  <div className="space-y-4">
+    <Toggle title="1. Blog Post Generator" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Write an 800-word blog post about [TOPIC] for [TARGET AUDIENCE].
+
+Context: [Brief background about the topic and why it matters to your audience]
+
+Tone: [Conversational/Professional/Friendly/Authoritative]
+
+Structure:
+
+- Compelling hook that addresses a pain point
+- 3 main sections with clear subheadings
+- Actionable tips or examples in each section
+- Strong conclusion with CTA
+
+Include: Real-world examples, statistics if relevant, and make it scannable with short paragraphs.
+
+Avoid: Jargon, fluff, generic advice`}
+/>
+</Toggle>
+
+    <Toggle title="2. Social Media Caption (Any Platform)" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Create 5 variations of a social media caption for [PLATFORM] to promote [PRODUCT/CONTENT].
+
+Product details: [Key features, benefits, price point]
+Target audience: [Demographics, interests, pain points]
+Brand voice: [Personality traits - e.g., witty, empowering, luxurious]
+
+For each variation:
+
+- Hook in first 10 words
+- 50-100 words total
+- Include relevant emoji (2-4)
+- End with clear CTA
+- Suggest 5 hashtags
+
+Variation types:
+
+1. Problem/Solution
+2. Customer testimonial style
+3. Educational/How-to
+4. Behind-the-scenes
+5. Question/Engagement`}
+   />
+
+   </Toggle>
+
+   <Toggle title="3. Email Subject Line Testing" level={2}>
+  <CodeBlock
+    title="Copy & Paste This Prompt"
+    language="text"
+    code={`Generate 20 email subject lines for [EMAIL TYPE] to [AUDIENCE].
+
+Email purpose: [Goal - e.g., promote new collection, re-engage inactive customers]
+Key offer/hook: [Main value proposition]
+Brand voice: [Tone characteristics]
+
+Requirements:
+
+- 10 short (under 40 characters for mobile)
+- 10 medium (40-60 characters)
+- Include mix of:
+  - Curiosity-driven
+  - Benefit-focused
+  - Urgency-based
+  - Personalization angles
+  - Question formats
+- No spam trigger words
+- 5 should include emoji
+
+Rank them by predicted open rate based on best practices.`}
+/>
+</Toggle>
+
+    <Toggle title="4. Product Description at Scale" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Write a product description for [PRODUCT NAME].
+
+Product specs: [Dimensions, materials, colors, features]
+Target customer: [Who buys this and why]
+Brand voice: [Style, tone, personality]
+Key benefits: [Top 3 reasons to buy]
+Competitive advantage: [What makes this different]
+
+Structure:
+
+- Headline (8-12 words)
+- Opening line (emotional hook)
+- Features & benefits (3-4 bullets)
+- Use case or lifestyle context
+- Technical specs (if needed)
+- Call to action
+
+Length: 100-150 words
+Include: Keywords for SEO: [LIST 3-5 KEYWORDS]
+Tone: [Aspirational/Practical/Playful - choose one]`}
+/>
+</Toggle>
+
+    <Toggle title="5. Ad Copy Variations" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Create 10 Facebook ad variations for [PRODUCT/OFFER].
+
+Campaign goal: [Awareness/Consideration/Conversion]
+Target audience: [Demographics, interests, behaviors]
+Key message: [Main selling point]
+Offer details: [Discount, free shipping, limited time, etc.]
+
+For each variation:
+
+- Primary text (125 characters or less for feed)
+- Headline (40 characters max)
+- Description (30 characters max)
+- Clear CTA
+
+Test different angles:
+
+- Benefit-focused (3 variations)
+- Problem/Solution (3 variations)
+- Social proof (2 variations)
+- Urgency/Scarcity (2 variations)
+
+Avoid: Clickbait, vague claims, all caps`}
+/>
+</Toggle>
+
+    <Toggle title="6. Content Repurposing" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`I have a [CONTENT TYPE - blog post/video/whitepaper] about [TOPIC].
+
+Original content summary: [150-word overview or paste URL]
+
+Repurpose this into:
+
+1. LinkedIn post (1,300 characters, professional tone)
+2. Twitter thread (8 tweets, conversational)
+3. Instagram carousel (5 slides, key points only)
+4. Email newsletter section (200 words)
+5. TikTok/Reel script (60 seconds, casual)
+
+Maintain: Core message, key data points, brand voice
+Adapt: Format, length, tone for each platform
+Include: Platform-specific CTAs and hooks`}
+/>
+</Toggle>
+
+    <Toggle title="7. SEO Meta Description" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Write SEO-optimized meta descriptions for this page: [URL or describe the page content]
+
+Page content: [Brief description or paste first paragraph]
+Target keyword: [Primary keyword]
+Secondary keywords: [2-3 related terms]
+
+Requirements:
+
+- 140-160 characters (display limit)
+- Include target keyword naturally
+- Compelling benefit or hook
+- Clear action or value proposition
+- No keyword stuffing
+- Make it click-worthy without being clickbait
+
+Provide: 5 variations to test`}
+/>
+</Toggle>
+
+    <Toggle title="8. Customer Persona Builder" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Help me create a detailed customer persona for [PRODUCT/SERVICE].
+
+What I know:
+
+- Demographics: [Age, location, income, education]
+- Behaviors: [Shopping habits, media consumption, tech use]
+- Our data: [Sales data, website analytics insights]
+
+Create a comprehensive persona including:
+
+- Name and brief bio
+- Goals and motivations
+- Pain points and challenges
+- Preferred channels and content types
+- Buying triggers and objections
+- Key messages that resonate
+- How our [product/service] fits their life
+
+Make it realistic and specific enough to guide creative decisions.`}
+/>
+</Toggle>
+
+    <Toggle title="9. Content Calendar Ideas" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Generate 30 days of content ideas for [BRAND/INDUSTRY] on [PLATFORM].
+
+Brand: [Brief description]
+Audience: [Target demographic]
+Goals: [Awareness/Engagement/Conversion - pick main focus]
+Current season/events: [Relevant holidays, industry events, product launches]
+
+For each day provide:
+
+- Content type (photo, video, carousel, story, etc.)
+- Topic/theme
+- Hook/angle
+- Suggested CTA
+
+Mix:
+
+- 40% educational/valuable content
+- 30% entertaining/engaging
+- 20% promotional
+- 10% user-generated or community content
+
+Include: Holiday/event tie-ins, trending topics, evergreen themes`}
+/>
+</Toggle>
+
+    <Toggle title="10. Competitive Analysis" level={2}>
+      <CodeBlock
+        title="Copy & Paste This Prompt"
+        language="text"
+        code={`Analyze the marketing strategy of [COMPETITOR NAME] in [SPECIFIC AREA - social media, email, ads, SEO].
+
+What I know: [Any observations you've made]
+
+Research and provide:
+
+1. Key messaging themes (top 3)
+2. Content strategy (frequency, types, style)
+3. Audience engagement tactics
+4. Unique selling propositions they emphasize
+5. Gaps or weaknesses in their approach
+6. Opportunities for us to differentiate
+
+Recommend: 5 tactics we should adopt or counter-position against
+
+Note: Base this on publicly available information and best practices analysis.`}
+/>
+</Toggle>
+
+  </div>
+
+  <div className="bg-brevo-cream border-l-4 border-brevo-green p-6 rounded-lg mt-6">
+    <h4 className="font-semibold text-brevo-green mb-3">Ready to Go Deeper?</h4>
+    <p className="text-sm text-gray-700 mb-3">
+      These 10 prompts are just the beginning. Each section of this playbook (3-8) contains 50+ specialized prompts for specific use cases.
+    </p>
+    <p className="text-sm text-gray-700">
+      <strong>Next step:</strong> Jump to your most urgent area (Content, Paid, Social, Email, Creative, or Analytics) and explore the full Operational Playbooks.
+    </p>
+  </div>
+</div>
+
+</div>

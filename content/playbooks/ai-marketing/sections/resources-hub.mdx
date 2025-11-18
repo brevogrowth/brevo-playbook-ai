@@ -1,0 +1,241 @@
+---
+title: Resources Hub
+emoji: 🎁
+order: 11
+description: Your central hub for tools, templates, learning resources, and community
+---
+
+import Toggle from '@/components/Toggle'
+import Card from '@/components/Card'
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+  <Card
+    title="100+ Tools"
+    description="Curated AI marketing tools"
+    variant="highlight"
+  />
+  <Card
+    title="200+ Prompts"
+    description="Ready-to-use prompt library"
+    variant="success"
+  />
+  <Card
+    title="50+ Templates"
+    description="Business docs & workflows"
+    variant="default"
+  />
+  <Card
+    title="Community"
+    description="Connect with AI marketers"
+    variant="default"
+  />
+</div>
+
+<div className="space-y-4">
+
+<Toggle title="Tool Directory" defaultOpen level={2}>
+  <div className="space-y-4">
+    <p className="text-gray-600 mb-4">
+      Interactive database of 100+ AI marketing tools
+    </p>
+
+    <div className="bg-brevo-cream p-6 rounded-lg mb-4">
+      <h4 className="font-semibold mb-3">Filter by:</h4>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-center">
+          Category
+        </div>
+        <div className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-center">
+          Price Tier
+        </div>
+        <div className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-center">
+          Use Case
+        </div>
+        <div className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-center">
+          Company Size
+        </div>
+      </div>
+    </div>
+
+    <div className="space-y-3">
+      <h4 className="font-semibold">Popular Tools by Category</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h5 className="font-semibold mb-2">Content Creation</h5>
+          <ul className="text-sm space-y-1 text-gray-600">
+            <li>• ChatGPT / Claude</li>
+            <li>• Jasper AI</li>
+            <li>• Copy.ai</li>
+          </ul>
+        </div>
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h5 className="font-semibold mb-2">SEO & Analytics</h5>
+          <ul className="text-sm space-y-1 text-gray-600">
+            <li>• Surfer SEO</li>
+            <li>• Clearscope</li>
+            <li>• MarketMuse</li>
+          </ul>
+        </div>
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h5 className="font-semibold mb-2">Design & Creative</h5>
+          <ul className="text-sm space-y-1 text-gray-600">
+            <li>• Midjourney</li>
+            <li>• DALL-E 3</li>
+            <li>• Canva AI</li>
+          </ul>
+        </div>
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h5 className="font-semibold mb-2">Social Media</h5>
+          <ul className="text-sm space-y-1 text-gray-600">
+            <li>• Buffer AI Assistant</li>
+            <li>• Hootsuite Insights</li>
+            <li>• Predis.ai</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p className="text-sm text-gray-500">
+      Full interactive tool directory with ratings, setup guides, and integrations coming soon
+    </p>
+  </div>
+</Toggle>
+
+<Toggle title="Template Library" level={2}>
+  <div className="space-y-4">
+    <h4 className="font-semibold">Prompts (200+ searchable)</h4>
+    <p className="text-gray-600 mb-4">
+      Copy-paste ready prompts organized by function, difficulty, and goal
+    </p>
+
+    <h4 className="font-semibold mt-6">Workflows (50+)</h4>
+    <p className="text-gray-600 mb-4">
+      Visual process maps, step-by-step guides, tool combinations
+    </p>
+
+    <h4 className="font-semibold mt-6">Business Documents</h4>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Card title="Business Cases (5)" variant="default">
+        <p className="text-sm text-gray-600">ROI calculators, pitch templates</p>
+      </Card>
+      <Card title="Pitch Decks (8)" variant="default">
+        <p className="text-sm text-gray-600">For Board, CEO, Finance, Teams</p>
+      </Card>
+      <Card title="Budget Templates (3)" variant="default">
+        <p className="text-sm text-gray-600">Investment planning spreadsheets</p>
+      </Card>
+      <Card title="Operational Templates" variant="default">
+        <p className="text-sm text-gray-600">SOPs, checklists, review forms</p>
+      </Card>
+    </div>
+
+    <p className="text-sm text-gray-500 mt-4">
+      All downloadable in PDF, PPTX, XLSX formats
+    </p>
+  </div>
+</Toggle>
+
+<Toggle title="Learning Center" level={2}>
+  <div className="space-y-4">
+    <h4 className="font-semibold">Courses & Training</h4>
+    <ul className="space-y-2 text-gray-600">
+      <li>• Self-paced modules (20)</li>
+      <li>• Video library (100+ tutorials)</li>
+      <li>• Webinar series (monthly)</li>
+      <li>• Certification program</li>
+    </ul>
+
+    <h4 className="font-semibold mt-6">By Level</h4>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-brevo-cream p-4 rounded-lg">
+        <h5 className="font-semibold mb-2">Beginner</h5>
+        <p className="text-sm text-gray-600">AI basics, first prompts, quick wins</p>
+      </div>
+      <div className="bg-brevo-cream p-4 rounded-lg">
+        <h5 className="font-semibold mb-2">Intermediate</h5>
+        <p className="text-sm text-gray-600">Workflow design, tool mastery</p>
+      </div>
+      <div className="bg-brevo-cream p-4 rounded-lg">
+        <h5 className="font-semibold mb-2">Advanced</h5>
+        <p className="text-sm text-gray-600">Custom GPTs, API integration</p>
+      </div>
+    </div>
+
+    <h4 className="font-semibold mt-6">External Resources</h4>
+    <p className="text-gray-600">
+      Curated courses, certifications, books, podcasts, newsletters
+    </p>
+  </div>
+</Toggle>
+
+<Toggle title="Community" level={2}>
+  <div className="space-y-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Card title="Forum" variant="highlight">
+        <p className="text-sm text-gray-600">Q&A, share wins, troubleshooting</p>
+      </Card>
+      <Card title="Office Hours" variant="default">
+        <p className="text-sm text-gray-600">Weekly sessions, expert Q&A</p>
+      </Card>
+    </div>
+
+    <h4 className="font-semibold mt-6">Contribution</h4>
+    <ul className="space-y-2 text-gray-600">
+      <li>• Submit your best prompts</li>
+      <li>• Share successful workflows</li>
+      <li>• Write case studies</li>
+      <li>• Suggest new tools</li>
+    </ul>
+  </div>
+</Toggle>
+
+<Toggle title="Industry Insights" level={2}>
+  <div className="space-y-4">
+    <h4 className="font-semibold">Benchmarks</h4>
+    <p className="text-gray-600 mb-4">
+      Adoption rates, performance metrics, investment levels by industry and company size
+    </p>
+
+    <h4 className="font-semibold mt-6">Case Studies (50+)</h4>
+    <p className="text-gray-600 mb-4">
+      Real-world success stories with metrics, organized by industry and use case
+    </p>
+
+    <h4 className="font-semibold mt-6">Trends & Research</h4>
+    <ul className="space-y-2 text-gray-600">
+      <li>• Quarterly trend reports</li>
+      <li>• Emerging capabilities</li>
+      <li>• Vendor landscape analysis</li>
+      <li>• Best practices evolution</li>
+    </ul>
+
+    <h4 className="font-semibold mt-6">What's Next</h4>
+    <p className="text-gray-600">
+      Roadmap, beta programs, innovation lab, future capabilities
+    </p>
+  </div>
+</Toggle>
+
+<Toggle title="Support" level={2}>
+  <div className="space-y-4">
+    <h4 className="font-semibold">Troubleshooting</h4>
+    <p className="text-gray-600 mb-4">
+      Common issues (50+), platform-specific tips, error solutions, workarounds
+    </p>
+
+    <h4 className="font-semibold mt-6">FAQs (100+)</h4>
+    <p className="text-gray-600 mb-4">
+      Searchable, organized by topic, community-voted
+    </p>
+
+    <h4 className="font-semibold mt-6">Getting Help</h4>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Card title="Community Forum" variant="default" />
+      <Card title="Office Hours" variant="default" />
+      <Card title="Email Support" variant="default" />
+      <Card title="Request Consultation" variant="highlight" />
+    </div>
+  </div>
+</Toggle>
+
+</div>

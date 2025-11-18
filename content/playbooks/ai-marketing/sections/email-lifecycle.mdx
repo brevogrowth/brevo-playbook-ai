@@ -1,0 +1,1901 @@
+---
+title: Email & Lifecycle Marketing
+emoji: 📧
+order: 6
+description: Drive engagement and revenue with AI-powered email personalization and lifecycle automation
+---
+
+
+<div className="space-y-16">
+
+{/* Executive Summary */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">📊 Executive Summary</h2>
+
+  <p className="text-xl text-gray-600 mb-6"><em>For CMOs & Marketing Leaders (5-minute read)</em></p>
+
+  <div className="space-y-4">
+    <Toggle title="Why Email + AI Matters Now" level={2}>
+      <p className="text-gray-700 mb-4">
+        Email marketing already delivers exceptional ROI at <strong>$36-$42 per $1 spent</strong> globally. AI amplifies this by <strong>41% on average</strong> through improved targeting and personalization, while reducing operational costs by over 20% in most implementations.
+      </p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg mb-4">
+        <h5 className="font-semibold text-brevo-green mb-3">The transformation is threefold:</h5>
+        <ul className="text-sm space-y-2 text-gray-700">
+          <li>• <strong>Efficiency:</strong> Campaign creation time drops from days to hours. One marketer now handles what previously required a team of three.</li>
+          <li>• <strong>Personalization at Scale:</strong> Dynamic content tailored to individual subscribers without manual segmentation work—fashion retailers see 30% higher click rates with AI-powered product recommendations.</li>
+          <li>• <strong>Strategic Insights:</strong> AI analyzes patterns across thousands of campaigns to surface optimization opportunities humans would miss.</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="Business Impact" level={2}>
+      <p className="text-sm font-semibold text-gray-dark mb-3">Companies integrating AI into email marketing report:</p>
+      <ul className="text-sm space-y-2 text-gray-700 mb-4">
+        <li>• <strong>41% increase</strong> in email-derived revenue vs. traditional methods</li>
+        <li>• <strong>51% reduction</strong> in operational costs (time, resources)</li>
+        <li>• <strong>2-3x increase</strong> in campaign output with same team size</li>
+        <li>• <strong>15-30% improvement</strong> in engagement metrics (opens, clicks, conversions)</li>
+      </ul>
+    </Toggle>
+
+    <Toggle title="Investment Profile" level={2}>
+      <div className="space-y-4">
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start justify-between mb-3">
+            <h5 className="font-semibold text-gray-900">Starter Stack</h5>
+            <span className="text-2xl font-bold text-brevo-green">$0-500/mo</span>
+          </div>
+          <ul className="text-sm space-y-1 text-gray-700 mb-2">
+            <li>• Free AI tools (ChatGPT, Claude) + existing ESP</li>
+            <li>• Expected ROI: 3-6 months</li>
+            <li>• Suitable for: Teams &lt; 50K subscribers</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start justify-between mb-3">
+            <h5 className="font-semibold text-gray-900">Growth Stack</h5>
+            <span className="text-2xl font-bold text-brevo-green">$500-2K/mo</span>
+          </div>
+          <ul className="text-sm space-y-1 text-gray-700 mb-2">
+            <li>• Dedicated email AI tools (Brevo AI, HubSpot AI, Klaviyo)</li>
+            <li>• Expected ROI: 2-4 months</li>
+            <li>• Suitable for: Teams 50K-500K subscribers</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start justify-between mb-3">
+            <h5 className="font-semibold text-gray-900">Enterprise Stack</h5>
+            <span className="text-2xl font-bold text-brevo-green">$2K-10K+/mo</span>
+          </div>
+          <ul className="text-sm space-y-1 text-gray-700 mb-2">
+            <li>• Advanced personalization engines (Movable Ink, Optimove)</li>
+            <li>• Expected ROI: 1-3 months</li>
+            <li>• Suitable for: Teams 500K+ subscribers</li>
+          </ul>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Strategic Priorities" level={2}>
+      <div className="space-y-4">
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Quick Wins (Week 1-4):</p>
+          <p className="text-sm text-gray-700">Subject line optimization, copy generation, basic personalization → Immediate 10-20% engagement lift</p>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Foundation (Month 2-3):</p>
+          <p className="text-sm text-gray-700">Lifecycle automation, segmentation, A/B testing at scale → 25-40% efficiency gain</p>
+        </div>
+
+        <div className="bg-white border border-gray-200 p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Advanced (Month 4-6):</p>
+          <p className="text-sm text-gray-700">Predictive sending, dynamic content, performance analytics → 40-60% revenue increase per campaign</p>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Action for Leaders" level={2}>
+      <ul className="text-sm space-y-3 text-gray-700">
+        <li>• <strong>Approve pilot:</strong> 1 quarter, 2-3 workflows, measure lift</li>
+        <li>• <strong>Budget:</strong> Reallocate $2-5K/month from freelance/agency to AI tools + training</li>
+        <li>• <strong>Team:</strong> Upskill 1-2 champions, then roll out</li>
+        <li>• <strong>Track:</strong> Efficiency (time saved), engagement (metrics), revenue (attributed sales)</li>
+      </ul>
+    </Toggle>
+  </div>
+</div>
+
+{/* Quick Wins */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">⚡ Quick Wins</h2>
+
+  <p className="text-xl text-gray-600 mb-6">3 Workflows to Implement This Week</p>
+
+  <div className="space-y-4">
+    <Toggle title="Quick Win 1: AI-Generated Subject Lines" level={2}>
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Impact:</p>
+        <p className="text-sm text-gray-700">10-30% increase in open rates | <strong>Time:</strong> 5 minutes per campaign | <strong>Cost:</strong> $0-20/month</p>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">The Opportunity</h4>
+      <p className="text-sm text-gray-700 mb-4">
+        Subject lines determine 50% of email success, yet most marketers test only 2-3 options per campaign. AI generates 10-20 compelling variants in seconds, dramatically improving your odds of finding winners.
+      </p>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Real Results:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• Email marketers using AI-generated subject lines report <strong>13-18% average lift</strong> in open rates</li>
+          <li>• One DTC brand increased opens by <strong>28%</strong> using AI-optimized personalized subject lines</li>
+          <li>• Emojis in subject lines boost opens by <strong>45% on average</strong> (when relevant to audience)</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">Implementation Steps:</h4>
+
+      <div className="space-y-4">
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">1. Gather context (30 seconds)</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Campaign goal (promotion, nurture, announcement)</li>
+            <li>• Key offer/message</li>
+            <li>• Target audience</li>
+            <li>• Brand tone</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">2. Generate variations (2 minutes)</p>
+
+          <CodeBlock language="text" code={`Generate 10 email subject lines for [campaign type] promoting [offer/message].
+
+Audience: [description]
+Tone: [playful/professional/urgent/empathetic]
+Length: [under 40 characters for mobile / 50-60 for desktop]
+
+Requirements:
+- 5 with urgency/scarcity
+- 3 with personalization tokens
+- 2 with emojis (if appropriate)
+- Vary between questions, statements, and benefits
+
+Avoid: Spam words (free, urgent, limited), ALL CAPS, excessive punctuation`} />
+
+          <div className="mt-3 bg-gray-50 p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Example Output:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• "Sarah, your 24h-only surprise inside 🎁" (personalized + emoji)</li>
+              <li>• "Flash Sale: 50% Off Ends Tonight" (urgency)</li>
+              <li>• "Still thinking about these?" (curiosity)</li>
+              <li>• "Your cart misses you 💔" (emotional + emoji)</li>
+              <li>• "Last chance: Your favorites are selling out" (scarcity)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">3. Select & test (2 minutes)</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Pick top 2-3 variants (different approaches)</li>
+            <li>• Set up A/B test in ESP</li>
+            <li>• 10-20% sample size minimum for significance</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">4. Deploy & learn (1 minute)</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Send winning variant to remaining list</li>
+            <li>• Document: What worked? (urgency vs. curiosity, emoji vs. plain)</li>
+            <li>• Build subject line playbook over time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-4 bg-white border border-gray-200 rounded-lg p-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Tools:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Free:</strong> ChatGPT, Claude (via web interface)</li>
+          <li>• <strong>Paid:</strong> Jasper ($49/mo), Copy.ai ($36/mo), your ESP's built-in AI</li>
+        </ul>
+      </div>
+
+      <div className="mt-4 bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+        <p className="text-sm font-semibold text-brevo-green mb-2">Common Mistakes:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>❌ Generic prompts → Bland output</li>
+          <li>❌ Not testing variations → Missing optimal choice</li>
+          <li>❌ Ignoring mobile preview (first 30-40 chars)</li>
+          <li>✅ Include brand voice examples in prompt</li>
+          <li>✅ Test emoji placement (beginning vs. end)</li>
+          <li>✅ Measure by segment (B2B vs. B2C react differently)</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="Quick Win 2: Campaign Copy Generation" level={2}>
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Impact:</p>
+        <p className="text-sm text-gray-700">3-5 hours saved per campaign | <strong>Time:</strong> 15-30 minutes per email | <strong>Cost:</strong> $0-50/month</p>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">The Opportunity</h4>
+      <p className="text-sm text-gray-700 mb-4">
+        Writing compelling email copy is time-intensive. AI acts as your first-draft copywriter, transforming a brief outline into polished email body text in minutes—freeing marketers to focus on strategy and optimization.
+      </p>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Real Results:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• Marketing teams report <strong>60-70% time reduction</strong> on copy creation</li>
+          <li>• One B2C brand now produces <strong>3x more campaigns</strong> with same team using AI</li>
+          <li>• Copy quality scores (grammar, readability) <strong>improve 15-20%</strong> with AI + human editing</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">Implementation Steps:</h4>
+
+      <div className="space-y-4">
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">1. Create a detailed brief (5 minutes)</p>
+
+          <CodeBlock language="text" code={`Campaign Brief Template:
+
+Goal: [Drive purchase / Build awareness / Educate / Re-engage]
+Offer/Message: [Specific details]
+Target Audience: [Demographics, behaviors, pain points]
+Key Benefits: [3-5 bullet points]
+Proof Points: [Stats, testimonials, features]
+Call-to-Action: [Specific action + link]
+Tone: [Match brand voice - examples]
+Length: [Short = 100-150 words / Medium = 200-300 / Long = 400+]
+Constraints: [Must mention code, avoid certain terms, etc.]`} />
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">2. Generate first draft (3 minutes)</p>
+
+          <CodeBlock language="text" code={`Write a [length] marketing email for [Brand/Product].
+
+Context:
+- Goal: [objective]
+- Audience: [description with pain points]
+- Offer: [specific details with all facts]
+- Key benefits: [list]
+
+Structure:
+1. Attention-grabbing opening (hook + personalization)
+2. 2-3 paragraphs explaining value/benefits
+3. Social proof or urgency element
+4. Clear CTA: [specific text]
+
+Tone: [brand voice description + 2-3 example sentences]
+
+Include:
+- Personalization token for first name
+- Discount code: [CODE]
+- Product link placeholder: [URL]
+
+Constraints:
+- Avoid: [spam words, overpromising]
+- Must mention: [critical elements]
+- Mobile-friendly paragraphs (2-3 sentences max)`} />
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">3. Edit & enhance (7 minutes)</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• <strong>Fact-check:</strong> Verify all product claims, prices, dates</li>
+            <li>• <strong>Brand alignment:</strong> Adjust tone, vocabulary to match voice</li>
+            <li>• <strong>Personalization:</strong> Ensure tokens are correct format</li>
+            <li>• <strong>Mobile optimization:</strong> Break long paragraphs, frontload key info</li>
+            <li>• <strong>Deliverability:</strong> Remove potential spam triggers</li>
+            <li>• <strong>CTA clarity:</strong> Make button text action-oriented and specific</li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-gray-dark mb-2">4. Design & test (10 minutes)</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Apply email template</li>
+            <li>• Add images (can use AI for alt text)</li>
+            <li>• Send test to multiple devices</li>
+            <li>• Check: Links work, images load, personalization renders</li>
+            <li>• Spam score check (Mail-Tester, SendForensics)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-4 bg-white border border-gray-200 rounded-lg p-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Tools:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>ESP-Integrated:</strong> Brevo AI Writer, HubSpot AI, Klaviyo AI, Mailchimp Smart Content</li>
+          <li>• <strong>Standalone:</strong> Jasper (best for brand voice training), Copy.ai (simplest), Anyword (performance prediction)</li>
+          <li>• <strong>Free:</strong> ChatGPT Plus ($20/mo) or Claude (via web)</li>
+        </ul>
+      </div>
+
+      <div className="mt-4 bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+        <p className="text-sm font-semibold text-brevo-green mb-2">Quality Checklist:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>☑ All facts accurate (product details, prices, dates)</li>
+          <li>☑ Personalization tokens correct format for your ESP</li>
+          <li>☑ No hallucinated information (AI inventing features)</li>
+          <li>☑ Brand voice consistent (compare to past emails)</li>
+          <li>☑ CTA clear and repeated 2-3 times</li>
+          <li>☑ Mobile-friendly (short paragraphs, front-loaded key info)</li>
+          <li>☑ No spam trigger words</li>
+          <li>☑ Discount code mentioned prominently</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="Quick Win 3: Personalization at Scale" level={2}>
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Impact:</p>
+        <p className="text-sm text-gray-700">20-30% increase in CTR and conversions | <strong>Time:</strong> 30 minutes setup, then automated | <strong>Cost:</strong> Included in most ESPs</p>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">The Opportunity</h4>
+      <p className="text-sm text-gray-700 mb-4">
+        Batch-and-blast emails get 1-2% CTR. Personalized emails get 4-6% CTR. But manually personalizing for thousands of subscribers is impossible. AI enables mass personalization: every recipient gets content tailored to their behavior, preferences, and stage.
+      </p>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Real Results:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• Fashion retailer using AI product recommendations: <strong>30% higher CTR</strong>, noticeable conversion lift</li>
+          <li>• Persado client achieved <strong>+10% conversion rate</strong> with AI-optimized language personalization</li>
+          <li>• B2C brands with dynamic content see <strong>2-3x improvement</strong> in engagement vs. static campaigns</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">Implementation Levels:</h4>
+
+      <div className="space-y-4">
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+          <p className="text-sm font-semibold text-brevo-green mb-2">Level 1: Basic Personalization (Start Here)</p>
+          <p className="text-sm text-gray-700 mb-3">Insert subscriber data dynamically:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• First name in greeting and subject line</li>
+            <li>• Location (city, state) for localized offers</li>
+            <li>• Last purchase or browsed category</li>
+            <li>• Days since last activity</li>
+          </ul>
+
+          <div className="mt-3 bg-white p-3 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">ESP Setup (15 minutes):</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>1. Ensure your contact fields are populated: name, location, purchase history</li>
+              <li>2. Create merge tags in email template: {`{{FirstName}}`}, {`{{City}}`}, {`{{LastProduct}}`}</li>
+              <li>3. Write template with fallbacks: {`Hi {{FirstName|there}},`} (shows "there" if name missing)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Level 2: Behavioral Personalization</p>
+          <p className="text-sm text-gray-700 mb-3">Tailor content based on subscriber actions:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• Cart abandoners → Show cart items + discount</li>
+            <li>• Product browsers → Similar product recommendations</li>
+            <li>• Repeat buyers → VIP offers, loyalty rewards</li>
+            <li>• Inactive users → Re-engagement incentive</li>
+          </ul>
+        </div>
+
+        <div className="bg-white border border-gray-200 p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Level 3: Predictive Personalization (Advanced)</p>
+          <p className="text-sm text-gray-700 mb-3">AI predicts what each user wants to see:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• <strong>Product recommendations:</strong> Based on browse/purchase history + similar users</li>
+            <li>• <strong>Send time optimization:</strong> AI predicts best time for each subscriber</li>
+            <li>• <strong>Content selection:</strong> AI chooses which content blocks to show each person</li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-3"><strong>Tools:</strong> Brevo, Klaviyo, Movable Ink, Optimove</p>
+        </div>
+      </div>
+
+      <div className="mt-4 bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+        <h5 className="font-semibold text-gray-dark mb-3">ROI Calculation:</h5>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          <div className="bg-white p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Before AI Personalization:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• List: 100,000 subscribers</li>
+              <li>• CTR: 2%</li>
+              <li>• Conversion: 3%</li>
+              <li>• AOV: $80</li>
+              <li className="font-semibold pt-2 border-t text-gray-dark">Revenue per campaign: $4,800</li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">After AI Personalization:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• List: 100,000 subscribers</li>
+              <li>• CTR: 5% (+150%)</li>
+              <li>• Conversion: 4% (+33%)</li>
+              <li>• AOV: $80</li>
+              <li className="font-semibold pt-2 border-t text-brevo-green">Revenue per campaign: $16,000</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white p-4 rounded">
+          <p className="text-sm font-semibold text-brevo-green">
+            Lift: $11,200 per campaign (233% increase)
+          </p>
+          <p className="text-sm text-gray-700 mt-2">
+            If sending 4 campaigns/month: <strong>$44,800 extra revenue/month</strong>
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-4 bg-white border border-gray-200 rounded-lg p-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Common Mistakes:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>❌ Over-personalizing (creepy factor)</li>
+          <li>❌ Missing fallback content (empty spaces if data missing)</li>
+          <li>❌ Not segmenting by personalization readiness (do you have data?)</li>
+          <li>✅ Start simple (name + location)</li>
+          <li>✅ Build complexity gradually (behavior → predictive)</li>
+          <li>✅ Always provide opt-out of personalization</li>
+        </ul>
+      </div>
+    </Toggle>
+  </div>
+</div>
+
+{/* Strategic Playbook */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">💼 Strategic Playbook</h2>
+
+  <p className="text-xl text-gray-600 mb-6"><em>For Marketing Leaders & Team Leads (30-minute read)</em></p>
+
+  <div className="space-y-4">
+    <Toggle title="The Email Team Transformation" level={2}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-dark mb-3">Before AI: Traditional Structure</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Team of 6:</p>
+          <ul className="text-sm space-y-1 text-gray-700 mb-3">
+            <li>• 1 Email Manager (strategy, planning)</li>
+            <li>• 2 Copywriters (campaign creation)</li>
+            <li>• 1 Designer (templates, graphics)</li>
+            <li>• 1 Marketing Analyst (reporting)</li>
+            <li>• 1 ESP Administrator (list management, deployment)</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Capacity:</p>
+          <ul className="text-sm space-y-1 text-gray-700 mb-3">
+            <li>• 8-12 campaigns/month</li>
+            <li>• 2-3 lifecycle series/quarter</li>
+            <li>• Limited testing</li>
+            <li>• Reactive optimization</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Cost Structure:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• Personnel: $450K/year (loaded)</li>
+            <li>• ESP: $3K/month</li>
+            <li>• Tools: $200/month</li>
+            <li className="font-semibold pt-2 border-t text-gray-dark">Total: $488K/year</li>
+          </ul>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-3">After AI: Transformed Structure</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Team of 4:</p>
+          <ul className="text-sm space-y-1 text-gray-700 mb-3">
+            <li>• 1 Email Strategy Lead (AI oversight, strategy)</li>
+            <li>• 1 AI Content Manager (prompt engineering, content direction)</li>
+            <li>• 1 Customer Journey Specialist (automation architect)</li>
+            <li>• 1 Performance Analyst (AI-enhanced analytics)</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Capacity:</p>
+          <ul className="text-sm space-y-1 text-gray-700 mb-3">
+            <li>• 24-30 campaigns/month (3x increase)</li>
+            <li>• 8-10 lifecycle series/quarter</li>
+            <li>• Continuous A/B testing</li>
+            <li>• Proactive optimization</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Cost Structure:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• Personnel: $380K/year (upskilled roles)</li>
+            <li>• ESP: $3K/month</li>
+            <li>• AI tools: $1.5K/month</li>
+            <li>• Training: $10K/year</li>
+            <li className="font-semibold pt-2 border-t text-brevo-green">Total: $430K/year</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-5">
+        <h5 className="font-semibold text-brevo-green mb-3">Net Result:</h5>
+        <ul className="text-sm space-y-2 text-gray-700">
+          <li>• <strong>$58K/year saved</strong> (12% cost reduction)</li>
+          <li>• <strong>3x output increase</strong> (same team capacity)</li>
+          <li>• <strong>Redeployed 2 roles</strong> (one to CRM strategy, one to customer analytics)</li>
+          <li>• <strong>ROI on AI investment:</strong> 5-6 months</li>
+        </ul>
+      </div>
+    </Toggle>
+
+    <Toggle title="ROI & Business Case" level={2}>
+      <div className="space-y-6">
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-3">Investment Required:</h5>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-white border border-gray-200 p-4 rounded-lg">
+              <p className="text-sm font-semibold text-gray-dark mb-2">Phase 1: Pilot (90 days)</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• AI tools: $150-500/month</li>
+                <li>• Training: $5K one-time</li>
+                <li>• Time: 40 hours</li>
+                <li className="font-semibold pt-2 border-t">Total: $5.5-7K</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border border-gray-200 p-4 rounded-lg">
+              <p className="text-sm font-semibold text-gray-dark mb-2">Phase 2: Scale (Months 4-6)</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• Additional tools: $500-1K/mo</li>
+                <li>• Advanced training: $3K</li>
+                <li>• Process optimization: 20h</li>
+                <li className="font-semibold pt-2 border-t">Total: $4.5-9K</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border border-gray-200 p-4 rounded-lg">
+              <p className="text-sm font-semibold text-gray-dark mb-2">Phase 3: Optimization (Mo 7-12)</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• Full stack: $1-2K/month</li>
+                <li>• Continuous learning: $500/mo</li>
+                <li className="font-semibold pt-2 border-t">Total: $6-15K</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-dark mb-3">Expected Returns:</h5>
+
+          <div className="space-y-4">
+            <div>
+              <p className="text-sm font-semibold text-gray-dark mb-2">Efficiency Gains:</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• Time saved: 25-40 hours/month per person</li>
+                <li>• At $75/hour blended rate: <strong>$22,500-36,000/year per person</strong></li>
+                <li>• Team of 3: <strong>$67,500-108,000/year</strong></li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-gray-dark mb-2">Revenue Impact:</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• Email campaign performance improvement: 20-40%</li>
+                <li>• If email drives $500K/year currently</li>
+                <li>• Incremental revenue: <strong>$100-200K/year</strong></li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-gray-dark mb-2">Cost Avoidance:</p>
+              <ul className="text-sm space-y-1 text-gray-700">
+                <li>• Freelance reduction: $15-20K/year</li>
+                <li>• Delayed hiring needs: $60K+/year (one FTE)</li>
+                <li>• Tool consolidation: $5K/year</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-4 bg-white p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Total First-Year ROI:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• Investment: $16-31K</li>
+              <li>• Returns: $180-330K+ (efficiency + revenue + cost avoidance)</li>
+              <li className="font-semibold pt-2 border-t text-brevo-green">Net Benefit: $149-299K</li>
+              <li className="font-semibold text-brevo-green">ROI: 583-966%</li>
+              <li className="font-semibold text-brevo-green">Payback Period: 1-2 months</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-lg">
+          <p className="text-sm font-semibold text-gray-dark mb-3">By Company Size:</p>
+
+          <div className="space-y-3">
+            <div>
+              <p className="text-sm font-semibold text-gray-dark">Small (&lt; 50K subscribers):</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Investment: $5-10K/year</li>
+                <li>• Return: $30-60K/year</li>
+                <li>• Payback: 2-4 months</li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-gray-dark">Mid-size (50-500K subscribers):</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Investment: $15-35K/year</li>
+                <li>• Return: $150-300K/year</li>
+                <li>• Payback: 1-3 months</li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-gray-dark">Enterprise (500K+ subscribers):</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Investment: $50-120K/year</li>
+                <li>• Return: $500K-2M+/year</li>
+                <li>• Payback: 1-2 months</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Scaling Strategy" level={2}>
+      <div className="space-y-4">
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-3">Phase 1: Crawl (Months 1-3)</h5>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Objective: Prove value, build confidence, establish processes</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Tactics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Implement 3 Quick Wins: subject lines, copy generation, basic personalization</li>
+            <li>• Start with low-risk campaigns: newsletters, promotions</li>
+            <li>• One champion owns pilot, shares learnings</li>
+            <li>• Document processes, build prompt library</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Success Metrics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• 15-20% engagement lift</li>
+            <li>• 40% time savings on tested workflows</li>
+            <li>• Team confidence: 80%+ comfortable with AI tools</li>
+            <li>• 3 documented workflows with templates</li>
+          </ul>
+
+          <p className="text-sm text-gray-700 mt-3"><strong>Investment:</strong> $500-1K/month (tools) + $5K (training)</p>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-dark mb-3">Phase 2: Walk (Months 4-6)</h5>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Objective: Scale proven workflows, add complexity</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Tactics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Roll out to full team (all campaigns)</li>
+            <li>• Add lifecycle automation (welcome, onboarding, win-back)</li>
+            <li>• Implement AI-driven segmentation</li>
+            <li>• Start A/B testing at scale</li>
+            <li>• Cross-train team on multiple workflows</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Success Metrics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• 2x campaign output vs. baseline</li>
+            <li>• 25-30% engagement improvement</li>
+            <li>• 3 new lifecycle series launched</li>
+            <li>• Team capacity: 100%+ increase</li>
+          </ul>
+
+          <p className="text-sm text-gray-700 mt-3"><strong>Investment:</strong> $1-2K/month (expanded tools) + $3K (advanced training)</p>
+        </div>
+
+        <div className="bg-white border border-gray-200 p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-900 mb-3">Phase 3: Run (Months 7-12)</h5>
+          <p className="text-sm font-semibold text-gray-dark mb-2">Objective: Advanced optimization, predictive capabilities</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Tactics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Deploy predictive send time optimization</li>
+            <li>• Full dynamic content personalization</li>
+            <li>• AI performance analytics and recommendations</li>
+            <li>• Automated optimization (self-improving campaigns)</li>
+            <li>• Center of Excellence established</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Success Metrics:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• 3x campaign output vs. baseline</li>
+            <li>• 35-45% engagement improvement</li>
+            <li>• $200K+ incremental email revenue</li>
+            <li>• Full team mastery of AI tools</li>
+          </ul>
+
+          <p className="text-sm text-gray-700 mt-3"><strong>Investment:</strong> $2-3K/month (advanced tools) + ongoing learning</p>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Governance & Standards" level={2}>
+      <h5 className="font-semibold text-gray-900 mb-3">Approval Workflows:</h5>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 overflow-x-auto mb-4">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b">
+              <th className="text-left p-2 font-semibold">Content Type</th>
+              <th className="text-left p-2 font-semibold">AI Draft</th>
+              <th className="text-left p-2 font-semibold">Human Review</th>
+              <th className="text-left p-2 font-semibold">Approval</th>
+              <th className="text-left p-2 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-700">
+            <tr className="border-b">
+              <td className="p-2">Subject lines</td>
+              <td className="p-2">✅ Auto</td>
+              <td className="p-2">✅ Marketer</td>
+              <td className="p-2">✅ Manager (spot check)</td>
+              <td className="p-2">Low risk</td>
+            </tr>
+            <tr className="border-b">
+              <td className="p-2">Newsletter body</td>
+              <td className="p-2">✅ AI + edit</td>
+              <td className="p-2">✅ Marketer</td>
+              <td className="p-2">✅ Manager (first 5, then spot)</td>
+              <td className="p-2">Medium risk</td>
+            </tr>
+            <tr className="border-b">
+              <td className="p-2">Promotional</td>
+              <td className="p-2">✅ AI + edit</td>
+              <td className="p-2">✅ Marketer + Legal</td>
+              <td className="p-2">✅ Manager</td>
+              <td className="p-2">High value</td>
+            </tr>
+            <tr className="border-b">
+              <td className="p-2">Lifecycle series</td>
+              <td className="p-2">✅ AI + edit</td>
+              <td className="p-2">✅ Marketer + stakeholders</td>
+              <td className="p-2">✅ Director</td>
+              <td className="p-2">Strategic</td>
+            </tr>
+            <tr>
+              <td className="p-2">Customer service</td>
+              <td className="p-2">❌ No AI</td>
+              <td className="p-2">✅ Human written</td>
+              <td className="p-2">✅ CS Lead</td>
+              <td className="p-2">High sensitivity</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+        <h5 className="font-semibold text-gray-dark mb-3">Quality Gates:</h5>
+        <p className="text-sm text-gray-700 mb-3">Every AI-generated email must pass:</p>
+
+        <div className="space-y-3">
+          <div>
+            <p className="text-sm font-semibold text-gray-dark">1. Factual Accuracy Check (Marketer)</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• All product details correct</li>
+              <li>• Pricing accurate and current</li>
+              <li>• Dates/deadlines verified</li>
+              <li>• Links tested and working</li>
+              <li>• Discount codes valid</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold text-gray-dark">2. Brand Voice Verification (Marketer)</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• Tone appropriate for segment</li>
+              <li>• Vocabulary matches style guide</li>
+              <li>• No off-brand phrases</li>
+              <li>• Personality consistent</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold text-gray-dark">3. Legal/Compliance Review (As needed)</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• Promotional terms clear</li>
+              <li>• Required disclosures present</li>
+              <li>• Claims substantiated</li>
+              <li>• CAN-SPAM compliant</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold text-gray-dark">4. Deliverability Pre-Check (System)</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>• Spam score &lt; 5 (Mail-Tester)</li>
+              <li>• No broken links</li>
+              <li>• Unsubscribe link present</li>
+              <li>• Authentication set up (SPF, DKIM)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Toggle>
+  </div>
+</div>
+
+{/* Operational Playbook */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">🎯 Operational Playbook</h2>
+
+  <p className="text-xl text-gray-600 mb-6"><em>For Email Marketers & Practitioners (60-90 minute read)</em></p>
+
+  <div className="space-y-4">
+    <Toggle title="Workflow 1: Campaign Email Creation" level={2}>
+      <p className="text-sm text-gray-600 mb-4"><em>Complete process from brief to send</em></p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Overview:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Time:</strong> 15-30 minutes (vs. 3-4 hours traditional)</li>
+          <li>• <strong>Tools:</strong> ChatGPT/Claude + your ESP + Grammarly (optional)</li>
+          <li>• <strong>Output:</strong> Ready-to-send campaign email with subject lines and body copy</li>
+          <li>• <strong>Skill level:</strong> Beginner-friendly</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3 mt-6">Step-by-Step Process:</h4>
+
+      <div className="space-y-6">
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 1: Campaign Brief (5 minutes)</h5>
+          <p className="text-sm text-gray-700 mb-3">Create a structured brief—AI performs best with detailed input.</p>
+
+          <CodeBlock language="text" code={`CAMPAIGN BRIEF TEMPLATE
+
+Campaign Name: [e.g., "Summer Sale 2025 - Week 1"]
+Send Date: [MM/DD/YYYY]
+Send Time: [Consider timezone and audience habits]
+
+OBJECTIVE:
+[ ] Drive immediate sales
+[ ] Build awareness
+[ ] Nurture/educate
+[ ] Re-engage inactive users
+[ ] Event registration
+[ ] Other: [specify]
+
+TARGET AUDIENCE:
+- Segment: [e.g., "Active customers, last purchase < 60 days"]
+- Size: [approximate subscriber count]
+- Demographics: [age, gender, location if relevant]
+- Psychographics: [values, pain points, motivations]
+- Email behavior: [open rate, engagement level]
+
+CORE MESSAGE:
+[In 1-2 sentences, what is this email about?]
+Example: "Our biggest summer sale is here—40% off everything
+for 48 hours only. Shop now to refresh your wardrobe."
+
+KEY BENEFITS/VALUE PROPS (3-5):
+1. [e.g., "40% off all items"]
+2. [e.g., "Free shipping over $50"]
+3. [e.g., "New arrivals included"]
+
+BRAND VOICE & TONE:
+Current brand voice: [describe, e.g., "Friendly, enthusiastic,
+conversational but not overly casual."]
+
+Example sentences that match our voice:
+✅ "We're beyond excited to share this with you!"
+✅ "Here's the deal: our best sale of the year, starting now."
+
+Examples that DON'T match:
+❌ "Attention! Limited time offer!"
+❌ "Dear Valued Customer,"
+
+CALL-TO-ACTION:
+- Primary CTA: [e.g., "Shop the Sale"]
+- CTA URL: [full link]`} />
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 2: Generate Subject Lines (2 minutes)</h5>
+
+          <CodeBlock language="text" code={`PROMPT FOR SUBJECT LINES:
+
+Generate 10 email subject lines for the following campaign:
+
+Campaign: [paste campaign name and objective from brief]
+Offer: [paste offer details]
+Audience: [paste audience description]
+Brand voice: [paste voice description + examples]
+
+Requirements:
+- Length: 40-60 characters (mobile-friendly)
+- Create urgency without being pushy
+- Include power words: [save, exclusive, limited, ends, new, today]
+- Variations:
+  * 3 with emoji (if appropriate for our brand)
+  * 3 with personalization token <FirstName>
+  * 2 with questions
+  * 2 with direct benefit/offer statement
+- Avoid: ALL CAPS, excessive punctuation, spam words
+
+Output format: Numbered list with reasoning for each`} />
+
+          <div className="mt-3 bg-gray-50 p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Example Output:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>1. "Sarah, 40% off everything ends Wednesday" [Personalized + deadline]</li>
+              <li>2. "Our biggest sale of summer starts now 🌞" [Clear benefit + emoji]</li>
+              <li>3. "What's 40% off? Everything." [Question format + simple answer]</li>
+              <li>4. "Exclusive: Early access to our summer sale" [VIP feeling]</li>
+              <li>5. "Save big: 40% off sitewide for 48 hours" [Direct benefit + scarcity]</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 3: Generate Email Body Copy (5 minutes)</h5>
+
+          <CodeBlock language="text" code={`PROMPT FOR EMAIL BODY:
+
+Write a [short/medium/long] promotional email for [Brand Name].
+
+CONTEXT:
+[Paste relevant sections from your campaign brief:
+- Objective
+- Target audience
+- Core message
+- Key benefits
+- Offer details
+- Brand voice with examples]
+
+STRUCTURE:
+1. Personalized greeting
+   - Use: Hi <FirstName>
+   - Fallback: "Hi there" if name unavailable
+
+2. Opening hook (1-2 sentences)
+   - Address a pain point or desire
+   - Create curiosity or excitement
+
+3. Main value proposition (2-3 short paragraphs)
+   - Lead with the benefit, not the feature
+   - Format: Short paragraphs (2-3 sentences max) for mobile
+   - Use: Active voice, second person ("you get", "you'll love")
+
+4. Offer details (clear and specific)
+   - Discount code: [CODE]
+   - Validity: [dates/times]
+   - Terms: [if any]
+
+5. Clear call-to-action (repeat 2-3 times)
+   - Primary CTA: [paste from brief]
+   - Button text: Action-oriented
+
+TONE & STYLE:
+- Match exactly: [paste brand voice description + examples]
+- Write: Conversationally but professionally
+- Avoid: Jargon, corporate speak, hype language`} />
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 4: Review & Edit AI Output (10 minutes)</h5>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Factual Accuracy Checklist:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>☑ Discount percentage correct</li>
+              <li>☑ Discount code accurate</li>
+              <li>☑ Start/end dates correct (time zone!)</li>
+              <li>☑ Product claims substantiated</li>
+              <li>☑ Links go to correct pages</li>
+              <li>☑ No "hallucinated" features (AI invented claims)</li>
+            </ul>
+          </div>
+
+          <div className="mt-3 bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+            <p className="text-sm font-semibold text-brevo-green mb-2">Common AI Mistakes to Fix:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>❌ Repeated phrases or redundancy → Trim</li>
+              <li>❌ Generic closing → Add personality</li>
+              <li>❌ Discount code buried → Move up, make prominent</li>
+              <li>❌ Too formal/too casual → Adjust tone</li>
+              <li>❌ Vague CTA ("Learn More") → Make specific ("Shop 40% Off")</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 5: Design & Assemble in ESP (5 minutes)</h5>
+          <ul className="text-sm space-y-2 text-gray-700">
+            <li>1. <strong>Select template</strong> - Use responsive email template (mobile-friendly)</li>
+            <li>2. <strong>Paste AI copy</strong> - Replace placeholders with actual links</li>
+            <li>3. <strong>Add CTAs</strong> - Create buttons for main CTAs with UTM parameters</li>
+            <li>4. <strong>Insert images</strong> - Optimize and add alt text (can use AI)</li>
+            <li>5. <strong>Configure settings</strong> - From name, reply-to, preheader, segment</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 6: Test & QA (5 minutes)</h5>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Checklist:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>☑ Subject line displays correctly (not cut off)</li>
+              <li>☑ Personalization tokens render (not showing as code)</li>
+              <li>☑ All links work and go to correct pages</li>
+              <li>☑ Images load and display properly</li>
+              <li>☑ Mobile rendering: Text readable, buttons tappable</li>
+              <li>☑ Desktop rendering: Proper width, no weird spacing</li>
+              <li>☑ Unsubscribe link present and functional</li>
+              <li>☑ Spam score check (Mail-Tester.com) - Target: 8+/10</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 7: Schedule & Send</h5>
+
+          <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Pre-send final checks:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>☑ Correct segment selected</li>
+              <li>☑ Send time optimal (see benchmark data for your audience)</li>
+              <li>☑ Exclusions set (recent purchasers, bounced)</li>
+              <li>☑ Tracking enabled (opens, clicks, conversions)</li>
+            </ul>
+
+            <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Send time best practices:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• <strong>B2C:</strong> Tuesday-Thursday, 10am-2pm in subscriber's timezone</li>
+              <li>• <strong>E-commerce:</strong> Sunday evenings (6-8pm) perform well</li>
+              <li>• <strong>B2B:</strong> Tuesday-Thursday, 8-10am</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Workflow 2: Lifecycle Email Series" level={2}>
+      <p className="text-sm text-gray-600 mb-4"><em>Automated sequences: Welcome, Onboarding, Nurture, Win-back</em></p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Overview:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Time to build:</strong> 2-4 hours for complete series</li>
+          <li>• <strong>Time to maintain:</strong> 1-2 hours/quarter for optimization</li>
+          <li>• <strong>ROI impact:</strong> Lifecycle emails generate 3-5x more revenue per email than campaigns</li>
+          <li>• <strong>Skill level:</strong> Intermediate</li>
+        </ul>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Revenue Impact:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• Welcome series: <strong>320% higher revenue per email</strong> vs. standard campaigns</li>
+          <li>• Onboarding: <strong>15-25% improvement</strong> in product adoption / repeat purchase</li>
+          <li>• Nurture: <strong>2-3x higher conversion rate</strong> when ready to buy</li>
+          <li>• Win-back: Recovers <strong>10-20% of inactive subscribers</strong></li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3 mt-6">Series Types:</h4>
+
+      <div className="space-y-6">
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-3">1. Welcome Series (New Subscribers)</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Goal: Introduce brand, set expectations, drive first purchase</p>
+          <p className="text-sm text-gray-700 mb-3">Structure: 3-5 emails over 7-14 days</p>
+
+          <div className="space-y-3">
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 1: Immediate welcome (sent immediately)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Confirm subscription</li>
+                <li>• Deliver signup incentive if promised</li>
+                <li>• Introduce brand story briefly</li>
+                <li>• Set expectations (how often you'll email)</li>
+                <li>• One clear CTA: "Start Shopping"</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 2: Product highlights (2-3 days later)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Showcase bestsellers or key products</li>
+                <li>• Social proof: reviews, testimonials</li>
+                <li>• Education: How products solve problems</li>
+                <li>• CTA: Browse specific collection</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 3: Social proof & urgency (3-4 days after Email 2)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Customer success stories</li>
+                <li>• Reminder of signup incentive (expiring soon)</li>
+                <li>• FOMO: "Join [X] happy customers"</li>
+                <li>• Final CTA: Complete first purchase</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-4">
+            <CodeBlock language="text" code={`AI PROMPT FOR WELCOME SERIES:
+
+Design a 3-email welcome series for [Brand Name].
+
+Brand Context:
+- Industry: [e.g., sustainable fashion]
+- Target audience: [e.g., eco-conscious women 25-40]
+- Average order value: [$X]
+- Key differentiators: [e.g., organic materials, carbon-neutral shipping]
+- Tone: [warm, educational, not pushy]
+
+Signup Context:
+- They signed up via: [e.g., website popup offering 15% off]
+- Incentive promised: [15% off first order, code WELCOME15]
+- Typical customer journey: Browse 2-3 times before purchasing
+
+For each email, provide:
+1. Suggested send timing (from previous email)
+2. Email subject line (with 3 variations)
+3. Email body content (200-250 words)
+4. Primary CTA
+5. Personalization elements to include
+
+Email 1 Focus: Welcome + deliver incentive
+Email 2 Focus: Bestsellers + education on why we're different
+Email 3 Focus: Social proof + urgency (incentive expiring)
+
+Ensure:
+- Narrative flow across emails (don't repeat same info)
+- Each email has distinct value (not just "buy now" x3)
+- Progressive disclosure (don't overwhelm in Email 1)
+- Addresses likely questions (shipping, returns, quality)
+
+Tone: Like a helpful friend introducing you to a great discovery`} />
+          </div>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-dark mb-3">2. Onboarding Series (New Customers/Users)</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Goal: Ensure product adoption, satisfaction, drive repeat purchase</p>
+          <p className="text-sm text-gray-700 mb-3">Context: This runs AFTER a purchase. It's about helping customers succeed with your product.</p>
+          <p className="text-sm text-gray-700 mb-3">Structure: 5-7 emails over 2-4 weeks</p>
+
+          <div className="space-y-2">
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark">Email 1: Order confirmation (immediate)</p>
+            </div>
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark">Email 2: Getting started (1-2 days after delivery)</p>
+            </div>
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark">Email 3: Advanced tips (4-5 days after Email 2)</p>
+            </div>
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark">Email 4: Complementary products (week 2)</p>
+            </div>
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark">Email 5: Feedback request (week 3)</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border border-gray-200 p-5 rounded-lg">
+          <h5 className="font-semibold text-gray-900 mb-3">3. Nurture Series (Long-term Education)</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Goal: Keep subscribers engaged without constant selling</p>
+          <p className="text-sm text-gray-700 mb-3">Structure: Ongoing or 6-10 email series over 2-3 months</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Content Mix:</p>
+          <ul className="text-sm space-y-1 text-gray-700 mb-3 ml-4">
+            <li>• 60% Educational: How-tos, tips, guides</li>
+            <li>• 20% Entertaining: Stories, behind-the-scenes, culture</li>
+            <li>• 20% Promotional: Soft sells, featured products</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Use Cases:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Complex/expensive products (B2B software, high-ticket items)</li>
+            <li>• Long consideration cycles (6+ months)</li>
+            <li>• Building brand affinity before need arises</li>
+            <li>• Educating market on new category/solution</li>
+          </ul>
+        </div>
+
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-3">4. Re-engagement (Win-back) Series</h5>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Goal: Recover inactive subscribers before they're completely lost</p>
+          <p className="text-sm text-gray-700 mb-3">Trigger: No opens/clicks in 60-90-120 days</p>
+          <p className="text-sm text-gray-700 mb-3">Structure: 2-3 emails over 2-4 weeks</p>
+
+          <div className="space-y-3">
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 1: "We miss you" (sincere, not desperate)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Acknowledge absence</li>
+                <li>• Offer: Incentive to come back (15-20% discount)</li>
+                <li>• Preview: What they've missed</li>
+                <li>• CTA: Come back / Update preferences</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 2: "Here's what's new" (7-10 days later, if no engagement)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Highlight: Major updates, new products</li>
+                <li>• Social proof: What others love</li>
+                <li>• Reminder: Discount still available</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Email 3: "Last call" (7-10 days later, if still no engagement)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Final attempt: Extended or better offer</li>
+                <li>• Provide easy outs: Update preferences, pause, unsubscribe</li>
+                <li>• Honesty: "If we're not relevant anymore, we understand"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-6 bg-white border border-gray-200 rounded-lg p-5">
+        <h5 className="font-semibold text-gray-900 mb-3">Series Performance Tracking:</h5>
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b">
+                <th className="text-left p-2 font-semibold">Series</th>
+                <th className="text-left p-2 font-semibold">Open Rate</th>
+                <th className="text-left p-2 font-semibold">Click Rate</th>
+                <th className="text-left p-2 font-semibold">Conversion</th>
+                <th className="text-left p-2 font-semibold">Revenue/Email</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr className="border-b">
+                <td className="p-2">Welcome</td>
+                <td className="p-2">50-60%</td>
+                <td className="p-2">15-25%</td>
+                <td className="p-2">8-15%</td>
+                <td className="p-2">3-5x campaigns</td>
+              </tr>
+              <tr className="border-b">
+                <td className="p-2">Onboarding</td>
+                <td className="p-2">40-50%</td>
+                <td className="p-2">10-20%</td>
+                <td className="p-2">5-10%</td>
+                <td className="p-2">2-4x campaigns</td>
+              </tr>
+              <tr className="border-b">
+                <td className="p-2">Nurture</td>
+                <td className="p-2">25-35%</td>
+                <td className="p-2">5-10%</td>
+                <td className="p-2">2-5%</td>
+                <td className="p-2">1-2x campaigns</td>
+              </tr>
+              <tr>
+                <td className="p-2">Win-back</td>
+                <td className="p-2">15-25%</td>
+                <td className="p-2">5-12%</td>
+                <td className="p-2">3-8%</td>
+                <td className="p-2">2-3x campaigns</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Workflow 3: Subject Line A/B Testing at Scale" level={2}>
+      <p className="text-sm text-gray-600 mb-4"><em>Systematic approach to optimize open rates</em></p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Overview:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Time:</strong> 15 minutes setup, ongoing</li>
+          <li>• <strong>Impact:</strong> 5-30% improvement in open rates</li>
+          <li>• <strong>Tools:</strong> Your ESP's A/B test feature + AI for variant generation</li>
+          <li>• <strong>Skill level:</strong> Beginner-intermediate</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">Why This Matters:</h4>
+      <p className="text-sm text-gray-700 mb-4">
+        Subject lines determine 35-50% of email opens. Yet most marketers test only 2 variations. AI enables you to generate 10-20 compelling variants in seconds, dramatically improving your odds of finding winners.
+      </p>
+
+      <div className="space-y-6">
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 1: Generate Test Variations (5 minutes)</h5>
+
+          <CodeBlock language="text" code={`Prompt Template:
+
+Generate 12 email subject line variations for A/B testing.
+
+Campaign: [describe campaign]
+Best performing subject historically: "[example]" (45% open rate)
+Worst performing: "[example]" (18% open rate)
+
+Create variations testing:
+- Length: 3 short (30-40 chars), 3 medium (41-60 chars), 3 long (60+ chars)
+- Emoji: 3 with emoji, 3 without
+- Personalization: 3 with <FirstName>, 3 without
+- Structure: 3 questions, 3 statements, 3 benefit-focused, 3 urgency-focused
+
+Requirements:
+- Maintain same core message across all
+- Match our brand voice: [description]
+- Mobile-friendly (front-load key words)
+- Avoid spam triggers
+
+Format output as a numbered table with columns:
+| # | Subject Line | Length | Type | Hypothesis |`} />
+
+          <div className="mt-3 bg-gray-50 p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Example AI Output:</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead>
+                  <tr className="border-b">
+                    <th className="text-left p-2">#</th>
+                    <th className="text-left p-2">Subject Line</th>
+                    <th className="text-left p-2">Length</th>
+                    <th className="text-left p-2">Type</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr className="border-b">
+                    <td className="p-2">1</td>
+                    <td className="p-2">Sarah, 40% off ends tonight</td>
+                    <td className="p-2">31</td>
+                    <td className="p-2">Short, personalized, urgent</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-2">2</td>
+                    <td className="p-2">Your 40% off sale ends at midnight 🌙</td>
+                    <td className="p-2">45</td>
+                    <td className="p-2">Medium, emoji, urgent</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-2">3</td>
+                    <td className="p-2">What if you could save 40% on everything?</td>
+                    <td className="p-2">47</td>
+                    <td className="p-2">Medium, question</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 2: Select Test Structure (2 minutes)</h5>
+
+          <div className="space-y-3">
+            <div className="bg-white border border-gray-200 p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Option A: Simple A/B test (2 variants)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Most ESPs support this</li>
+                <li>• Pick 2 variations with different hypotheses</li>
+                <li>• Test on 30-40% of list</li>
+                <li>• Winner sends to remaining 60-70%</li>
+              </ul>
+            </div>
+
+            <div className="bg-white border border-gray-200 p-3 rounded">
+              <p className="text-sm font-semibold text-gray-dark mb-1">Option B: Multi-variant test (3-5 variants)</p>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4">
+                <li>• Some ESPs support (HubSpot, Klaviyo, Campaign Monitor)</li>
+                <li>• Test 3-5 variations</li>
+                <li>• Each gets equal sample (10-20% of list)</li>
+                <li>• More learning, takes longer</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-700 mt-3"><strong>Recommendation:</strong> Start with Option A, graduate to B</p>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 3: Configure Test in ESP (3 minutes)</h5>
+
+          <ul className="text-sm space-y-2 text-gray-700">
+            <li>1. <strong>Create campaign</strong> as usual</li>
+            <li>2. <strong>Enable A/B test feature</strong></li>
+            <li>3. <strong>Add variations</strong> (Variant A, Variant B)</li>
+            <li>4. <strong>Set test parameters:</strong>
+              <ul className="text-sm space-y-1 text-gray-700 ml-4 mt-1">
+                <li>• Test size: 30-40% (minimum for significance)</li>
+                <li>• Winning metric: Open rate</li>
+                <li>• Test duration: 2-4 hours</li>
+                <li>• Auto-send winner: Yes</li>
+              </ul>
+            </li>
+            <li>5. <strong>Schedule send</strong></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 4: Track & Document Results (5 minutes post-send)</h5>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Document learnings:</p>
+            <CodeBlock language="text" code={`Subject Line Test Log
+Date: [MM/DD/YYYY]
+Campaign: [name]
+Winner: "Sarah, 40% off ends tonight" (43% open rate)
+
+Why it won:
+- Personalization (<FirstName>)
+- Specific discount amount (40%)
+- Clear urgency (ends tonight)
+- Short length (31 chars = fully visible on mobile)
+
+Pattern recognition:
+- This is the 3rd test where personalization + urgency won
+- Emoji subject lines have lost 2/3 recent tests (maybe overused?)
+- Questions underperformed again (curiosity less effective for sales?)
+
+Next test:
+- Try non-urgent personalized subject vs. urgent non-personalized
+- Hypothesis: Is it the personalization or urgency driving opens?`} />
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 5: Build a Subject Line Playbook (Ongoing)</h5>
+
+          <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+            <p className="text-sm font-semibold text-brevo-green mb-2">Example Playbook Insights:</p>
+
+            <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">What Works for Our Audience:</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>✅ Personalization (first name): <strong>+8-15% open rate</strong> consistently</li>
+              <li>✅ Specific numbers (40% off, $20 savings): <strong>+5-10%</strong> vs. vague</li>
+              <li>✅ Short subjects (30-45 chars): <strong>+7%</strong> vs. long (60+)</li>
+              <li>✅ Urgency with deadline: <strong>+10-12%</strong></li>
+              <li>✅ Question format in nurture emails: <strong>+6%</strong></li>
+            </ul>
+
+            <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">What Doesn't Work:</p>
+            <ul className="text-sm space-y-1 text-gray-700 ml-4">
+              <li>❌ Emoji in every email: Diminishing returns after 3x/month</li>
+              <li>❌ All caps: Spam filters AND lower opens (<strong>-5%</strong>)</li>
+              <li>❌ Generic greetings ("Hello!"): No lift vs. no greeting</li>
+              <li>❌ Clickbait: High opens, high unsubscribes (net negative)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-6 bg-white border border-gray-200 rounded-lg p-5">
+        <h5 className="font-semibold text-gray-900 mb-3">ROI of Subject Line Testing:</h5>
+
+        <div className="bg-gray-50 p-4 rounded mb-3">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Scenario:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• Current open rate: 25% → After systematic testing: 32% (+7pp)</li>
+            <li>• List: 100,000 subscribers</li>
+            <li>• Emails sent: 16/month</li>
+            <li>• Conversion: 4% | AOV: $75</li>
+          </ul>
+        </div>
+
+        <div className="bg-brevo-cream p-4 rounded">
+          <p className="text-sm font-semibold text-gray-dark mb-2">Results:</p>
+          <ul className="text-sm space-y-1 text-gray-700">
+            <li>• Before: $36,000/month revenue</li>
+            <li>• After: $46,080/month revenue</li>
+            <li className="font-semibold pt-2 border-t text-brevo-green">Lift: $10,080/month = $120,960/year</li>
+            <li className="font-semibold text-brevo-green">Time invested: 15 min per campaign = 4 hours/month</li>
+            <li className="font-semibold text-brevo-green">ROI: $2,500/hour of optimization time</li>
+          </ul>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Workflow 4: Dynamic Personalization at Scale" level={2}>
+      <p className="text-sm text-gray-600 mb-4"><em>Complete implementation guide for individualized content</em></p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Overview:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Time to implement:</strong> 2-4 hours initial setup, then automated</li>
+          <li>• <strong>Impact:</strong> 20-40% increase in CTR and conversions</li>
+          <li>• <strong>Technical level:</strong> Intermediate-Advanced</li>
+          <li>• <strong>Tools:</strong> ESP with dynamic content + AI for content generation</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">What is Dynamic Personalization?</h4>
+      <div className="bg-gray-50 p-4 rounded-lg mb-4">
+        <ul className="text-sm space-y-2 text-gray-700">
+          <li>• Traditional email: One message sent to everyone (batch and blast)</li>
+          <li>• Basic personalization: Insert first name, city</li>
+          <li>• <strong>Dynamic personalization:</strong> Different content blocks for different subscribers in the SAME campaign</li>
+        </ul>
+      </div>
+
+      <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+        <h5 className="font-semibold text-gray-900 mb-3">Business Impact:</h5>
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b">
+                <th className="text-left p-2">Metric</th>
+                <th className="text-left p-2">Generic Email</th>
+                <th className="text-left p-2">Dynamic Email</th>
+                <th className="text-left p-2">Lift</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700">
+              <tr className="border-b">
+                <td className="p-2">Open rate</td>
+                <td className="p-2">25%</td>
+                <td className="p-2">27%</td>
+                <td className="p-2 text-brevo-green">+8%</td>
+              </tr>
+              <tr className="border-b">
+                <td className="p-2">Click rate</td>
+                <td className="p-2">2.5%</td>
+                <td className="p-2">5.2%</td>
+                <td className="p-2 text-brevo-green">+108%</td>
+              </tr>
+              <tr className="border-b">
+                <td className="p-2">Conversion</td>
+                <td className="p-2">3%</td>
+                <td className="p-2">6.5%</td>
+                <td className="p-2 text-brevo-green">+117%</td>
+              </tr>
+              <tr>
+                <td className="p-2">Revenue/email</td>
+                <td className="p-2">$0.02</td>
+                <td className="p-2">$0.05</td>
+                <td className="p-2 text-brevo-green">+150%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-sm text-gray-700 mt-3">
+          <strong>For a 100K list:</strong> $2,000 → $5,000 revenue per send = <span className="text-brevo-green font-semibold">$3K lift per campaign</span>
+        </p>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">Implementation Levels:</h4>
+
+      <div className="space-y-4">
+        <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg">
+          <h5 className="font-semibold text-brevo-green mb-2">Level 1: Merge Tag Personalization</h5>
+          <p className="text-sm text-gray-700 mb-3">Simplest form—insert subscriber data into template.</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">What you need:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• Contact fields populated (name, location, purchase history)</li>
+            <li>• ESP that supports merge tags (all do)</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2 mt-3">Example:</p>
+          <CodeBlock language="text" code={`Hi <FirstName|there>,
+
+Based on your recent interest in <LastBrowsedCategory|our products>,
+we thought you'd love these new arrivals:
+
+[Product recommendations in <LastBrowsedCategory|bestsellers>]
+
+<If in California>
+PS: Enjoy free same-day delivery in <City>!
+</If>`} />
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-lg">
+          <h5 className="font-semibold text-gray-dark mb-2">Level 2: Conditional Content Blocks</h5>
+          <p className="text-sm text-gray-700 mb-3">Show/hide entire sections based on subscriber attributes.</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">What you need:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4 mb-3">
+            <li>• ESP with conditional content features (Brevo, Klaviyo, HubSpot, Mailchimp)</li>
+            <li>• Behavioral or segment data</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Example Structure:</p>
+          <CodeBlock language="text" code={`IF <CustomerType> = Repeat AND <LastPurchase> < 30 days
+  SHOW: "You might also like..." (complementary products)
+ELSE IF <CustomerType> = Repeat AND <LastPurchase> > 90 days
+  SHOW: "We miss you!" (bestsellers + discount)
+ELSE IF <CustomerType> = FirstTime
+  SHOW: "Welcome to the family" (bestsellers)
+ELSE IF <HasCartItems> = Yes
+  SHOW: "Still thinking about these?" (cart items + urgency)
+ELSE
+  SHOW: Default product grid`} />
+        </div>
+
+        <div className="bg-white border border-gray-200 p-4 rounded-lg">
+          <h5 className="font-semibold text-gray-900 mb-2">Level 3: Predictive/Behavioral Personalization</h5>
+          <p className="text-sm text-gray-700 mb-3">AI predicts what each user wants to see.</p>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">What you need:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4 mb-3">
+            <li>• ESP with AI features (Klaviyo, Brevo, Salesforce Marketing Cloud, Optimove)</li>
+            <li>• Sufficient data history (3+ months, 10K+ subscribers)</li>
+            <li>• Product catalog integrated</li>
+          </ul>
+
+          <p className="text-sm font-semibold text-gray-dark mb-2">Capabilities:</p>
+          <ul className="text-sm space-y-1 text-gray-700 ml-4">
+            <li>• <strong>Product Recommendations:</strong> Collaborative filtering, content-based, predictive</li>
+            <li>• <strong>Send Time Optimization:</strong> AI learns when each subscriber opens (15-30% lift)</li>
+            <li>• <strong>Subject Line Selection:</strong> Each subscriber gets the likely winner for THEM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-6 bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+        <h5 className="font-semibold text-gray-dark mb-3">ROI Calculation Example:</h5>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-white p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Investment:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• ESP upgrade: +$300/month</li>
+              <li>• Implementation: 8 hours first month</li>
+              <li>• AI tools: +$500/month</li>
+              <li className="font-semibold pt-2 border-t">Total: $800/month</li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Expected Results (conservative):</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• CTR: 2.8% → 4.2% (+50%)</li>
+              <li>• Conversion: 3.5% → 5.3% (+50%)</li>
+              <li>• Revenue per campaign: $16K → $36K</li>
+              <li className="font-semibold pt-2 border-t text-brevo-green">Monthly lift: $80,000</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-white p-4 rounded mt-3">
+          <p className="text-sm font-semibold text-brevo-green">
+            Net benefit: $79,200/month = $950K/year | Payback period: &lt;1 month
+          </p>
+        </div>
+      </div>
+    </Toggle>
+
+    <Toggle title="Workflow 5: AI-Powered Performance Analysis" level={2}>
+      <p className="text-sm text-gray-600 mb-4"><em>Turn data into actionable insights automatically</em></p>
+
+      <div className="bg-brevo-cream border-l-4 border-brevo-green p-4 rounded-lg mb-4">
+        <p className="text-sm font-semibold text-gray-dark mb-2">Overview:</p>
+        <ul className="text-sm space-y-1 text-gray-700">
+          <li>• <strong>Time:</strong> 30 minutes to set up, then 10-15 min/week ongoing</li>
+          <li>• <strong>Impact:</strong> Uncover optimization opportunities worth 10-25% performance lift</li>
+          <li>• <strong>Tools:</strong> AI (ChatGPT/Claude) + your ESP reporting + spreadsheet</li>
+          <li>• <strong>Skill level:</strong> Intermediate</li>
+        </ul>
+      </div>
+
+      <h4 className="font-semibold text-gray-900 mb-3">The Problem:</h4>
+      <p className="text-sm text-gray-700 mb-4">
+        Most marketers look at surface metrics (open rate, CTR) but miss deeper insights. Manual analysis takes hours. AI can process data and surface insights in minutes.
+      </p>
+
+      <div className="space-y-6">
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 1: Export Email Performance Data (5 minutes)</h5>
+
+          <p className="text-sm text-gray-700 mb-2">From your ESP, export campaign performance for last 3-6 months.</p>
+
+          <div className="bg-white border border-gray-200 p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Required columns:</p>
+            <ul className="text-sm space-y-1 text-gray-700">
+              <li>• Campaign name, Send date/time, Audience segment</li>
+              <li>• List size, Subject line</li>
+              <li>• Open rate, Click rate, Conversion rate</li>
+              <li>• Revenue, Bounce rate, Unsubscribe rate</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 2: AI Analysis - Overall Trends (10 minutes)</h5>
+
+          <CodeBlock language="text" code={`PROMPT FOR TREND ANALYSIS:
+
+Analyze this email campaign performance data and identify key trends,
+patterns, and anomalies.
+
+[Paste your CSV data or summary stats]
+
+Context:
+- Date range: [start - end]
+- Total campaigns: [#]
+- Company: [industry, e.g., B2C fashion e-commerce]
+
+Please analyze and provide:
+
+1. OVERALL PERFORMANCE SUMMARY
+   - Average open rate, CTR, conversion
+   - How do we compare to industry benchmarks?
+   - Trends over time: improving, declining, or flat?
+
+2. BEST PERFORMING CAMPAIGNS (Top 3)
+   - Which campaigns had highest engagement/revenue?
+   - What do they have in common?
+   - Hypotheses on why they succeeded
+
+3. WORST PERFORMING CAMPAIGNS (Bottom 3)
+   - Which campaigns underperformed?
+   - What do they have in common?
+   - Hypotheses on why they failed
+
+4. SEGMENT PERFORMANCE
+   - Do certain segments consistently outperform?
+   - Any segments declining in engagement?
+
+5. TEMPORAL PATTERNS
+   - Best days of week for sending?
+   - Best times of day?
+
+6. ACTIONABLE RECOMMENDATIONS
+   - 5-7 specific changes to test based on data
+   - Prioritized by potential impact`} />
+
+          <div className="mt-3 bg-gray-50 p-4 rounded">
+            <p className="text-sm font-semibold text-gray-dark mb-2">Example AI Output (Condensed):</p>
+            <div className="text-sm text-gray-700 space-y-2">
+              <p><strong>OVERALL PERFORMANCE SUMMARY</strong></p>
+              <ul className="ml-4 space-y-1">
+                <li>✓ Average open rate: 32% (ABOVE industry benchmark 18%)</li>
+                <li>✓ Average CTR: 3.1% (ABOVE industry benchmark 2.6%)</li>
+                <li>✗ Conversion rate: 2.8% (BELOW potential - opportunity!)</li>
+              </ul>
+
+              <p className="mt-2"><strong>KEY INSIGHT:</strong> You're getting opens but losing clicks. Focus on email content and CTA optimization.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-dark mb-2">Step 3: Create Monthly Summary (5 minutes)</h5>
+
+          <div className="bg-white border border-gray-200 p-4 rounded">
+            <CodeBlock language="text" code={`MONTHLY EMAIL PERFORMANCE SUMMARY
+Month: [Month Year]
+
+📊 KEY METRICS
+Open Rate: 34% (↑ 2pp vs last month) ✅
+Click Rate: 3.5% (↑ 0.4pp) ✅
+Conversion: 3.2% (↓ 0.3pp) ⚠️
+Revenue: $142K (↑ $18K) ✅
+
+🏆 WINS THIS MONTH
+- Best campaign: "Flash Sale Thursday" → $38K
+- VIP segment engagement up 12%
+- Subject line testing: Urgency + personalization = 41% OR
+
+⚠️ CONCERNS
+- Conversion rate declining despite higher CTR
+- "Deal seeker" segment engagement down 8%
+- Mobile click rate 1.2% lower than desktop
+
+🎯 ACTIONS FOR NEXT MONTH
+1. A/B test landing pages for conversion lift
+2. Reduce deal seeker frequency to bi-weekly
+3. Optimize mobile email template
+4. Run 2 more flash sale campaigns (Thursday 10am proven)
+5. Launch re-engagement campaign for inactive segment
+
+📈 FORECAST
+If we implement: +$25-35K revenue next month`} />
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-6 bg-brevo-cream border-l-4 border-brevo-green p-5 rounded-lg">
+        <h5 className="font-semibold text-gray-dark mb-3">ROI of Performance Analysis:</h5>
+
+        <ul className="text-sm space-y-2 text-gray-700">
+          <li>• <strong>Time Investment:</strong> Setup: 2 hours (one-time) + Monthly: 30 minutes</li>
+          <li>• <strong>Value Created:</strong> Identify 5-10 optimization opportunities per month</li>
+          <li>• <strong>Expected lift:</strong> 10-25% across metrics</li>
+          <li>• <strong>For $500K/year email revenue:</strong> $50-125K additional revenue</li>
+          <li className="font-semibold pt-2 border-t text-brevo-green">ROI: $50-125K for 6.5 hours = $7,700-19,200/hour</li>
+        </ul>
+
+        <p className="text-sm text-gray-700 mt-3">
+          <strong>Plus:</strong> Compound effect—continuous optimization over 12 months can double email revenue.
+        </p>
+      </div>
+    </Toggle>
+  </div>
+</div>
+
+{/* Resources */}
+
+<div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">📚 Resources</h2>
+
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <Card
+      title="Prompt Library"
+      description="50+ copy-paste ready prompts for campaign creation, optimization, analysis, and strategy"
+      variant="highlight"
+    />
+    <Card
+      title="Tool Comparison Matrix"
+      description="Compare 20+ ESPs with AI features, personalization capabilities, and pricing"
+      variant="highlight"
+    />
+    <Card
+      title="Templates & Checklists"
+      description="Campaign briefs, QA checklists, testing trackers, and performance dashboards"
+      variant="highlight"
+    />
+    <Card
+      title="Video Tutorials"
+      description="6 short videos covering subject line generation, personalization setup, and more"
+      variant="highlight"
+    />
+  </div>
+
+  <div className="mt-8 bg-brevo-cream border-l-4 border-brevo-green p-6 rounded-lg">
+    <h5 className="font-semibold text-brevo-green mb-3">Further Learning:</h5>
+
+    <div className="space-y-4">
+      <div>
+        <p className="text-sm font-semibold text-gray-dark mb-2">Recommended Courses:</p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4">
+          <li>• Email Marketing Automation (HubSpot Academy) - Free</li>
+          <li>• AI for Marketers (Coursera) - $49</li>
+          <li>• Advanced Email Strategy (Reforge) - $1,995</li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="text-sm font-semibold text-gray-dark mb-2">Communities:</p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4">
+          <li>• Email Geeks Slack (free)</li>
+          <li>• Litmus Community (free)</li>
+          <li>• Klaviyo User Group (free)</li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="text-sm font-semibold text-gray-dark mb-2">Newsletters:</p>
+        <ul className="text-sm space-y-1 text-gray-700 ml-4">
+          <li>• Really Good Emails</li>
+          <li>• Email Weekly</li>
+          <li>• Inbox Collective</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
